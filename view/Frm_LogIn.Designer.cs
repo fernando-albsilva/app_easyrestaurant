@@ -69,7 +69,6 @@ namespace view
             this.Txt_usuario.TabIndex = 2;
             this.Txt_usuario.Text = "Username";
             this.Txt_usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Txt_usuario.TextChanged += new System.EventHandler(this.Txt_usuario_TextChanged);
             this.Txt_usuario.Leave += new System.EventHandler(this.Txt_usuario_Leave);
             this.Txt_usuario.MouseHover += new System.EventHandler(this.Txt_usuario_MouseHover);
             // 
@@ -132,10 +131,10 @@ namespace view
             this.Lbl_imagem_login.Name = "Lbl_imagem_login";
             this.Lbl_imagem_login.Size = new System.Drawing.Size(322, 200);
             this.Lbl_imagem_login.TabIndex = 5;
-            this.Lbl_imagem_login.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Frm_LogIn
             // 
+            this.AcceptButton = this.Btn_enviar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
@@ -146,8 +145,11 @@ namespace view
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Frm_LogIn";
             this.Text = "LogIn";
+            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LogIn_Load);
             this.Pnl_container_login.ResumeLayout(false);

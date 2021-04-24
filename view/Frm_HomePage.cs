@@ -21,5 +21,10 @@ namespace view
         {
 
         }
+
+        private void Btn_Fechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

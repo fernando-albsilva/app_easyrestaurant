@@ -22,13 +22,10 @@ namespace view
 
         private void LogIn_Load(object sender, EventArgs e)
         {
-
+          
         }
 
-        private void lbl_titulo_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void lbl_enviar_Click(object sender, EventArgs e)
         {
@@ -44,30 +41,33 @@ namespace view
             if (controllerUser.VerificaUsuario(usuario))
             {
                 Console.WriteLine("usuario autenticado");
-                Frm_HomePage frm_homePage = new Frm_HomePage();
-                this.Close();
-                frm_homePage.ShowDialog();
+
+                this.iniciaHomePage();
+
+                //this.Hide();
+
+
+                //frm_homePage.ShowDialog();
             }
             else
             {
+              
                 Console.WriteLine("usuario recusado");
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+       
+        private void iniciaHomePage()
         {
+            this.Hide();
+            Frm_HomePage frm_homePage = new Frm_HomePage();
+            frm_homePage.ShowDialog();
+            Application.Exit();
 
         }
+       
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
 
-        }
-
-        private void Txt_usuario_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void Txt_usuario_MouseHover(object sender, EventArgs e)
         {
@@ -77,10 +77,7 @@ namespace view
             }
         }
 
-        private void Txt_usuario_MouseLeave(object sender, EventArgs e)
-        {
-           
-        }
+       
 
         private void Txt_usuario_Leave(object sender, EventArgs e)
         {
