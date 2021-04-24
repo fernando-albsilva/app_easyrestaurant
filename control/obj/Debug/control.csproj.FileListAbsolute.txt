@@ -1,0 +1,11 @@
+C:\Users\PICHAU\source\repos\easyrestaurant\control\bin\Debug\control.dll
+C:\Users\PICHAU\source\repos\easyrestaurant\control\bin\Debug\control.pdb
+C:\Users\PICHAU\source\repos\easyrestaurant\control\bin\Debug\DAO.dll
+C:\Users\PICHAU\source\repos\easyrestaurant\control\bin\Debug\model.dll
+C:\Users\PICHAU\source\repos\easyrestaurant\control\bin\Debug\DAO.pdb
+C:\Users\PICHAU\source\repos\easyrestaurant\control\bin\Debug\model.pdb
+C:\Users\PICHAU\source\repos\easyrestaurant\control\obj\Debug\control.csprojAssemblyReference.cache
+C:\Users\PICHAU\source\repos\easyrestaurant\control\obj\Debug\control.csproj.CoreCompileInputs.cache
+C:\Users\PICHAU\source\repos\easyrestaurant\control\obj\Debug\control.csproj.CopyComplete
+C:\Users\PICHAU\source\repos\easyrestaurant\control\obj\Debug\control.dll
+C:\Users\PICHAU\source\repos\easyrestaurant\control\obj\Debug\control.pdb
