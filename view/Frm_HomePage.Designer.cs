@@ -29,13 +29,23 @@ namespace view
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(162)))), ((int)(((byte)(44)))));
+            this.panel1.Location = new System.Drawing.Point(192, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 0;
             // 
             // Frm_HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 625);
+            this.Controls.Add(this.panel1);
             this.Name = "Frm_HomePage";
             this.Text = "Frm_HomePage";
             this.Load += new System.EventHandler(this.Frm_HomePage_Load);
@@ -44,5 +54,7 @@ namespace view
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
     }
 }
