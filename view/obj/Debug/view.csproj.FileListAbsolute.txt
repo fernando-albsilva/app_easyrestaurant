@@ -26,6 +26,7 @@ C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\bin\Debug\model.dll
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\bin\Debug\control.pdb
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\bin\Debug\DAO.pdb
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\bin\Debug\model.pdb
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Frm_HomePage.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Frm_LogIn.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Properties.Resources.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csproj.GenerateResource.cache
@@ -34,4 +35,3 @@ C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csproj.CopyC
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.exe
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.pdb
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csprojAssemblyReference.cache
-C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Frm_HomePage.resources

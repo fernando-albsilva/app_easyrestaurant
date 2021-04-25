@@ -27,7 +27,7 @@ namespace view
 
        
 
-        private void lbl_enviar_Click(object sender, EventArgs e)
+        private void Lbl_enviar_Click(object sender, EventArgs e)
         {
             string username = Txt_usuario.Text;
             string senha = Txt_senha.Text;
@@ -42,7 +42,7 @@ namespace view
             {
                 Console.WriteLine("usuario autenticado");
 
-                this.iniciaHomePage();
+                this.IniciaHomePage();
 
                 //this.Hide();
 
@@ -57,7 +57,7 @@ namespace view
         }
 
        
-        private void iniciaHomePage()
+        private void IniciaHomePage()
         {
             this.Hide();
             Frm_HomePage frm_homePage = new Frm_HomePage();

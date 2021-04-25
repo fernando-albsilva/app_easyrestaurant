@@ -55,7 +55,7 @@ namespace view
             this.Btn_enviar.TabIndex = 1;
             this.Btn_enviar.Text = "Enviar";
             this.Btn_enviar.UseVisualStyleBackColor = false;
-            this.Btn_enviar.Click += new System.EventHandler(this.lbl_enviar_Click);
+            this.Btn_enviar.Click += new System.EventHandler(this.Lbl_enviar_Click);
             // 
             // Txt_usuario
             // 

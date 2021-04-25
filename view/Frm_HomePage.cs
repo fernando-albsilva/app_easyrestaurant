@@ -22,9 +22,16 @@ namespace view
 
         }
 
-        private void Btn_Fechar_Click(object sender, EventArgs e)
+       
+
+        private void Pnl_south_Paint(object sender, PaintEventArgs e)
         {
-            Application.Exit();
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
