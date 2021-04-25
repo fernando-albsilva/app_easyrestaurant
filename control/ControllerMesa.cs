@@ -11,7 +11,7 @@ namespace control
 
        
 
-        public int getTotalMesa()
+        public int GetTotalMesa()
         {
             return 4;
         }

@@ -9,22 +9,25 @@ namespace model
     public class Mesa
     {
         private string numero;
-        private int disponibilidade;
+        private string nomeCliente;
+        private string idGarcom;
+        private bool disponibilidade;
+        private List<Produto> listaDeProduto;
+        private DateTime horaInicio;
+        private DateTime horaTermino;
 
-        public Mesa(string numero, int disponibilidade)
+        public Mesa(string numero)
         {
-
             this.Numero = numero;
-            this.Disponibilidade = disponibilidade;
-
+            this.listaDeProduto = new List<Produto>();
         }
 
         public string Numero { get => numero; set => numero = value; }
-        public int Disponibilidade { get => disponibilidade; set => disponibilidade = value; }
-
-        public int verifica_disponibilidade()
-        {
-            return this.disponibilidade;
-        }
+        public string NomeCliente { get => nomeCliente; set => nomeCliente = value; }
+        public string IdGarcom { get => idGarcom; set => idGarcom = value; }
+        public bool Disponibilidade { get => disponibilidade; set => disponibilidade = value; }
+        public List<Produto> Produto { get => listaDeProduto; set => listaDeProduto = value; }
+        public DateTime HoraInicio { get => horaInicio; set => horaInicio = value; }
+        public DateTime HoraTermino { get => horaTermino; set => horaTermino = value; }
     }
 }

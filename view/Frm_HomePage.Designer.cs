@@ -146,7 +146,7 @@ namespace view
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Pnl_south.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(162)))), ((int)(((byte)(44)))));
             this.Pnl_south.Controls.Add(this.Lbl_informacoes);
-            this.Pnl_south.Location = new System.Drawing.Point(-2, 614);
+            this.Pnl_south.Location = new System.Drawing.Point(-2, 799);
             this.Pnl_south.Name = "Pnl_south";
             this.Pnl_south.Size = new System.Drawing.Size(1759, 200);
             this.Pnl_south.TabIndex = 1;
@@ -173,7 +173,7 @@ namespace view
             this.Pnl_east.Controls.Add(this.Mnu_east);
             this.Pnl_east.Location = new System.Drawing.Point(-2, 111);
             this.Pnl_east.Name = "Pnl_east";
-            this.Pnl_east.Size = new System.Drawing.Size(303, 497);
+            this.Pnl_east.Size = new System.Drawing.Size(303, 682);
             this.Pnl_east.TabIndex = 2;
             // 
             // Lbl_menu
@@ -370,7 +370,7 @@ namespace view
             this.Pnl_west.Controls.Add(this.Lbl_informacaoMesa);
             this.Pnl_west.Location = new System.Drawing.Point(1454, 111);
             this.Pnl_west.Name = "Pnl_west";
-            this.Pnl_west.Size = new System.Drawing.Size(303, 497);
+            this.Pnl_west.Size = new System.Drawing.Size(303, 682);
             this.Pnl_west.TabIndex = 5;
             // 
             // Lbl_dadosMesa
@@ -416,7 +416,7 @@ namespace view
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Pnl_center.AutoScroll = true;
-            this.Pnl_center.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Pnl_center.BackColor = System.Drawing.Color.White;
             this.Pnl_center.Controls.Add(this.Btn_mesa15);
             this.Pnl_center.Controls.Add(this.Btn_mesa14);
             this.Pnl_center.Controls.Add(this.Btn_mesa13);
@@ -434,7 +434,7 @@ namespace view
             this.Pnl_center.Controls.Add(this.Btn_mesa1);
             this.Pnl_center.Location = new System.Drawing.Point(307, 111);
             this.Pnl_center.Name = "Pnl_center";
-            this.Pnl_center.Size = new System.Drawing.Size(1141, 497);
+            this.Pnl_center.Size = new System.Drawing.Size(1141, 682);
             this.Pnl_center.TabIndex = 6;
             // 
             // Btn_mesa2
@@ -492,7 +492,7 @@ namespace view
             this.Btn_mesa5.Text = "Mesa 05";
             this.Btn_mesa5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_mesa5.UseVisualStyleBackColor = true;
-            this.Btn_mesa5.Click += new System.EventHandler(this.button3_Click);
+            this.Btn_mesa5.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Btn_mesa10
             // 
@@ -500,7 +500,7 @@ namespace view
             this.Btn_mesa10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa10.Location = new System.Drawing.Point(968, 173);
+            this.Btn_mesa10.Location = new System.Drawing.Point(968, 193);
             this.Btn_mesa10.Name = "Btn_mesa10";
             this.Btn_mesa10.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa10.TabIndex = 15;
@@ -514,7 +514,7 @@ namespace view
             this.Btn_mesa9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa9.Location = new System.Drawing.Point(744, 173);
+            this.Btn_mesa9.Location = new System.Drawing.Point(744, 193);
             this.Btn_mesa9.Name = "Btn_mesa9";
             this.Btn_mesa9.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa9.TabIndex = 14;
@@ -528,7 +528,7 @@ namespace view
             this.Btn_mesa8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa8.Location = new System.Drawing.Point(507, 173);
+            this.Btn_mesa8.Location = new System.Drawing.Point(507, 193);
             this.Btn_mesa8.Name = "Btn_mesa8";
             this.Btn_mesa8.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa8.TabIndex = 13;
@@ -542,7 +542,7 @@ namespace view
             this.Btn_mesa7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa7.Location = new System.Drawing.Point(262, 173);
+            this.Btn_mesa7.Location = new System.Drawing.Point(262, 193);
             this.Btn_mesa7.Name = "Btn_mesa7";
             this.Btn_mesa7.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa7.TabIndex = 12;
@@ -556,7 +556,7 @@ namespace view
             this.Btn_mesa6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa6.Location = new System.Drawing.Point(22, 173);
+            this.Btn_mesa6.Location = new System.Drawing.Point(22, 193);
             this.Btn_mesa6.Name = "Btn_mesa6";
             this.Btn_mesa6.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa6.TabIndex = 11;
@@ -570,7 +570,7 @@ namespace view
             this.Btn_mesa15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa15.Location = new System.Drawing.Point(968, 329);
+            this.Btn_mesa15.Location = new System.Drawing.Point(968, 369);
             this.Btn_mesa15.Name = "Btn_mesa15";
             this.Btn_mesa15.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa15.TabIndex = 20;
@@ -584,7 +584,7 @@ namespace view
             this.Btn_mesa14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa14.Location = new System.Drawing.Point(744, 329);
+            this.Btn_mesa14.Location = new System.Drawing.Point(744, 369);
             this.Btn_mesa14.Name = "Btn_mesa14";
             this.Btn_mesa14.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa14.TabIndex = 19;
@@ -598,7 +598,7 @@ namespace view
             this.Btn_mesa13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa13.Location = new System.Drawing.Point(507, 329);
+            this.Btn_mesa13.Location = new System.Drawing.Point(507, 369);
             this.Btn_mesa13.Name = "Btn_mesa13";
             this.Btn_mesa13.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa13.TabIndex = 18;
@@ -612,7 +612,7 @@ namespace view
             this.Btn_mesa12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa12.Location = new System.Drawing.Point(262, 329);
+            this.Btn_mesa12.Location = new System.Drawing.Point(262, 369);
             this.Btn_mesa12.Name = "Btn_mesa12";
             this.Btn_mesa12.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa12.TabIndex = 17;
@@ -626,7 +626,7 @@ namespace view
             this.Btn_mesa11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa11.Location = new System.Drawing.Point(22, 329);
+            this.Btn_mesa11.Location = new System.Drawing.Point(22, 369);
             this.Btn_mesa11.Name = "Btn_mesa11";
             this.Btn_mesa11.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa11.TabIndex = 16;
@@ -638,7 +638,7 @@ namespace view
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1756, 814);
+            this.ClientSize = new System.Drawing.Size(1756, 999);
             this.Controls.Add(this.Pnl_center);
             this.Controls.Add(this.Pnl_west);
             this.Controls.Add(this.Pnl_east);

@@ -7,16 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using model;
 
 
 namespace view
 {
     public partial class Frm_HomePage : Form
     {
-        private int totalMesa;
+        
         public Frm_HomePage()
         {
-           
+
+            // testa se as 15 mesas foram inicializadas na lista na main
+
+            GrupoMesa grupoMesa = new GrupoMesa();
+
+            Mesa mesa;
+
+            for(int i=0; i<15;i++)
+            {
+                mesa = (grupoMesa.buscaMesa(i));
+                Console.WriteLine("numero da mesa : " + mesa.Numero);
+            }
+     
+            //
+
+            
             InitializeComponent();
           
         }
@@ -38,7 +54,7 @@ namespace view
 
         }
 
-        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        private void ToolStripComboBox1_Click(object sender, EventArgs e)
         {
 
         }
@@ -57,7 +73,7 @@ namespace view
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
 
         }

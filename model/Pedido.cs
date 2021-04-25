@@ -29,17 +29,17 @@ namespace model
         public string Id_garcom { get => id_garcom; set => id_garcom = value; }
         public string Id_usuario { get => id_usuario; set => id_usuario = value; }
 
-        public decimal valor_total_pedido()
+        public decimal Valor_total_pedido()
         {
             return 1;
         }
 
-        public void adiciona_produto()
+        public void Adiciona_produto()
         {
 
         }
 
-        public void exclui_produto()
+        public void Exclui_produto()
         {
 
         }
