@@ -37,18 +37,36 @@ namespace view
             this.Pnl_south = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Pnl_east = new System.Windows.Forms.Panel();
-            this.Btn_usuario = new System.Windows.Forms.Button();
-            this.Btn_mesa = new System.Windows.Forms.Button();
-            this.Btn_Garcom = new System.Windows.Forms.Button();
-            this.Btn_produto = new System.Windows.Forms.Button();
-            this.Lbl_cadastro = new System.Windows.Forms.Label();
             this.Pnl_west = new System.Windows.Forms.Panel();
             this.Lbl_dadosMesa = new System.Windows.Forms.Label();
             this.Lbl_informacaoMesa = new System.Windows.Forms.Label();
+            this.produtoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.garçomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mesaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Mnu_east = new System.Windows.Forms.MenuStrip();
+            this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.detalharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.detalharToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.detalharToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.detalharToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Lbl_menu = new System.Windows.Forms.Label();
             this.Pnl_north.SuspendLayout();
             this.Pnl_south.SuspendLayout();
             this.Pnl_east.SuspendLayout();
             this.Pnl_west.SuspendLayout();
+            this.Mnu_east.SuspendLayout();
             this.SuspendLayout();
             // 
             // Pnl_north
@@ -135,87 +153,12 @@ namespace view
             this.Pnl_east.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Pnl_east.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(132)))));
-            this.Pnl_east.Controls.Add(this.Btn_usuario);
-            this.Pnl_east.Controls.Add(this.Btn_mesa);
-            this.Pnl_east.Controls.Add(this.Btn_Garcom);
-            this.Pnl_east.Controls.Add(this.Btn_produto);
-            this.Pnl_east.Controls.Add(this.Lbl_cadastro);
+            this.Pnl_east.Controls.Add(this.Lbl_menu);
+            this.Pnl_east.Controls.Add(this.Mnu_east);
             this.Pnl_east.Location = new System.Drawing.Point(-2, 111);
             this.Pnl_east.Name = "Pnl_east";
             this.Pnl_east.Size = new System.Drawing.Size(303, 497);
             this.Pnl_east.TabIndex = 2;
-            // 
-            // Btn_usuario
-            // 
-            this.Btn_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(162)))), ((int)(((byte)(14)))));
-            this.Btn_usuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_usuario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
-            this.Btn_usuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_usuario.Font = new System.Drawing.Font("Arial", 15F);
-            this.Btn_usuario.ForeColor = System.Drawing.Color.White;
-            this.Btn_usuario.Location = new System.Drawing.Point(55, 278);
-            this.Btn_usuario.Name = "Btn_usuario";
-            this.Btn_usuario.Size = new System.Drawing.Size(193, 38);
-            this.Btn_usuario.TabIndex = 4;
-            this.Btn_usuario.Text = "Usuário";
-            this.Btn_usuario.UseVisualStyleBackColor = false;
-            this.Btn_usuario.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // Btn_mesa
-            // 
-            this.Btn_mesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(162)))), ((int)(((byte)(14)))));
-            this.Btn_mesa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_mesa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
-            this.Btn_mesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_mesa.Font = new System.Drawing.Font("Arial", 15F);
-            this.Btn_mesa.ForeColor = System.Drawing.Color.White;
-            this.Btn_mesa.Location = new System.Drawing.Point(55, 211);
-            this.Btn_mesa.Name = "Btn_mesa";
-            this.Btn_mesa.Size = new System.Drawing.Size(193, 38);
-            this.Btn_mesa.TabIndex = 3;
-            this.Btn_mesa.Text = "Mesa";
-            this.Btn_mesa.UseVisualStyleBackColor = false;
-            // 
-            // Btn_Garcom
-            // 
-            this.Btn_Garcom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(162)))), ((int)(((byte)(14)))));
-            this.Btn_Garcom.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Garcom.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
-            this.Btn_Garcom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Garcom.Font = new System.Drawing.Font("Arial", 15F);
-            this.Btn_Garcom.ForeColor = System.Drawing.Color.White;
-            this.Btn_Garcom.Location = new System.Drawing.Point(55, 147);
-            this.Btn_Garcom.Name = "Btn_Garcom";
-            this.Btn_Garcom.Size = new System.Drawing.Size(193, 38);
-            this.Btn_Garcom.TabIndex = 2;
-            this.Btn_Garcom.Text = "Garçom";
-            this.Btn_Garcom.UseVisualStyleBackColor = false;
-            // 
-            // Btn_produto
-            // 
-            this.Btn_produto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(162)))), ((int)(((byte)(14)))));
-            this.Btn_produto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_produto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
-            this.Btn_produto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_produto.Font = new System.Drawing.Font("Arial", 15F);
-            this.Btn_produto.ForeColor = System.Drawing.Color.White;
-            this.Btn_produto.Location = new System.Drawing.Point(55, 83);
-            this.Btn_produto.Name = "Btn_produto";
-            this.Btn_produto.Size = new System.Drawing.Size(193, 38);
-            this.Btn_produto.TabIndex = 1;
-            this.Btn_produto.Text = "Produto";
-            this.Btn_produto.UseVisualStyleBackColor = false;
-            // 
-            // Lbl_cadastro
-            // 
-            this.Lbl_cadastro.AutoSize = true;
-            this.Lbl_cadastro.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
-            this.Lbl_cadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(122)))), ((int)(((byte)(20)))));
-            this.Lbl_cadastro.Location = new System.Drawing.Point(74, 25);
-            this.Lbl_cadastro.Name = "Lbl_cadastro";
-            this.Lbl_cadastro.Size = new System.Drawing.Size(134, 32);
-            this.Lbl_cadastro.TabIndex = 0;
-            this.Lbl_cadastro.Text = "Cadastro";
             // 
             // Pnl_west
             // 
@@ -251,6 +194,191 @@ namespace view
             this.Lbl_informacaoMesa.TabIndex = 0;
             this.Lbl_informacaoMesa.Text = "Mesa";
             // 
+            // produtoToolStripMenuItem
+            // 
+            this.produtoToolStripMenuItem.AutoSize = false;
+            this.produtoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(132)))), ((int)(((byte)(5)))));
+            this.produtoToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.produtoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarToolStripMenuItem,
+            this.editarToolStripMenuItem,
+            this.detalharToolStripMenuItem,
+            this.excluirToolStripMenuItem});
+            this.produtoToolStripMenuItem.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
+            this.produtoToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.produtoToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
+            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.produtoToolStripMenuItem.Text = "Produto";
+            // 
+            // garçomToolStripMenuItem
+            // 
+            this.garçomToolStripMenuItem.AutoSize = false;
+            this.garçomToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(132)))), ((int)(((byte)(5)))));
+            this.garçomToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarToolStripMenuItem1,
+            this.editarToolStripMenuItem1,
+            this.detalharToolStripMenuItem1,
+            this.excluirToolStripMenuItem1});
+            this.garçomToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.garçomToolStripMenuItem.Name = "garçomToolStripMenuItem";
+            this.garçomToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.garçomToolStripMenuItem.Text = "Garçom";
+            // 
+            // mesaToolStripMenuItem
+            // 
+            this.mesaToolStripMenuItem.AutoSize = false;
+            this.mesaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(132)))), ((int)(((byte)(5)))));
+            this.mesaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarToolStripMenuItem2,
+            this.editarToolStripMenuItem2,
+            this.detalharToolStripMenuItem2,
+            this.excluirToolStripMenuItem2});
+            this.mesaToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.mesaToolStripMenuItem.Name = "mesaToolStripMenuItem";
+            this.mesaToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.mesaToolStripMenuItem.Text = "Mesa";
+            // 
+            // usuarioToolStripMenuItem
+            // 
+            this.usuarioToolStripMenuItem.AutoSize = false;
+            this.usuarioToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(132)))), ((int)(((byte)(5)))));
+            this.usuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarToolStripMenuItem3,
+            this.editarToolStripMenuItem3,
+            this.detalharToolStripMenuItem3,
+            this.excluirToolStripMenuItem3});
+            this.usuarioToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
+            this.usuarioToolStripMenuItem.Text = "Usuario";
+            // 
+            // Mnu_east
+            // 
+            this.Mnu_east.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(132)))));
+            this.Mnu_east.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
+            this.Mnu_east.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.produtoToolStripMenuItem,
+            this.garçomToolStripMenuItem,
+            this.mesaToolStripMenuItem,
+            this.usuarioToolStripMenuItem});
+            this.Mnu_east.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
+            this.Mnu_east.Location = new System.Drawing.Point(0, 0);
+            this.Mnu_east.Name = "Mnu_east";
+            this.Mnu_east.Padding = new System.Windows.Forms.Padding(6, 100, 0, 2);
+            this.Mnu_east.Size = new System.Drawing.Size(303, 328);
+            this.Mnu_east.TabIndex = 0;
+            this.Mnu_east.Text = "Menu East";
+            this.Mnu_east.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.Mnu_east_ItemClicked);
+            // 
+            // cadastrarToolStripMenuItem
+            // 
+            this.cadastrarToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(218, 36);
+            this.cadastrarToolStripMenuItem.Text = "Cadastrar";
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(218, 36);
+            this.editarToolStripMenuItem.Text = "Editar";
+            // 
+            // detalharToolStripMenuItem
+            // 
+            this.detalharToolStripMenuItem.Name = "detalharToolStripMenuItem";
+            this.detalharToolStripMenuItem.Size = new System.Drawing.Size(218, 36);
+            this.detalharToolStripMenuItem.Text = "Detalhar";
+            // 
+            // excluirToolStripMenuItem
+            // 
+            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(218, 36);
+            this.excluirToolStripMenuItem.Text = "Excluir";
+            // 
+            // cadastrarToolStripMenuItem1
+            // 
+            this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
+            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(218, 36);
+            this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
+            // 
+            // editarToolStripMenuItem1
+            // 
+            this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(218, 36);
+            this.editarToolStripMenuItem1.Text = "Editar";
+            // 
+            // detalharToolStripMenuItem1
+            // 
+            this.detalharToolStripMenuItem1.Name = "detalharToolStripMenuItem1";
+            this.detalharToolStripMenuItem1.Size = new System.Drawing.Size(218, 36);
+            this.detalharToolStripMenuItem1.Text = "Detalhar";
+            // 
+            // excluirToolStripMenuItem1
+            // 
+            this.excluirToolStripMenuItem1.Name = "excluirToolStripMenuItem1";
+            this.excluirToolStripMenuItem1.Size = new System.Drawing.Size(218, 36);
+            this.excluirToolStripMenuItem1.Text = "Excluir";
+            // 
+            // cadastrarToolStripMenuItem2
+            // 
+            this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(218, 36);
+            this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
+            // 
+            // editarToolStripMenuItem2
+            // 
+            this.editarToolStripMenuItem2.Name = "editarToolStripMenuItem2";
+            this.editarToolStripMenuItem2.Size = new System.Drawing.Size(218, 36);
+            this.editarToolStripMenuItem2.Text = "Editar";
+            // 
+            // detalharToolStripMenuItem2
+            // 
+            this.detalharToolStripMenuItem2.Name = "detalharToolStripMenuItem2";
+            this.detalharToolStripMenuItem2.Size = new System.Drawing.Size(218, 36);
+            this.detalharToolStripMenuItem2.Text = "Detalhar";
+            // 
+            // excluirToolStripMenuItem2
+            // 
+            this.excluirToolStripMenuItem2.Name = "excluirToolStripMenuItem2";
+            this.excluirToolStripMenuItem2.Size = new System.Drawing.Size(218, 36);
+            this.excluirToolStripMenuItem2.Text = "Excluir";
+            // 
+            // cadastrarToolStripMenuItem3
+            // 
+            this.cadastrarToolStripMenuItem3.Name = "cadastrarToolStripMenuItem3";
+            this.cadastrarToolStripMenuItem3.Size = new System.Drawing.Size(218, 36);
+            this.cadastrarToolStripMenuItem3.Text = "Cadastrar";
+            // 
+            // editarToolStripMenuItem3
+            // 
+            this.editarToolStripMenuItem3.Name = "editarToolStripMenuItem3";
+            this.editarToolStripMenuItem3.Size = new System.Drawing.Size(218, 36);
+            this.editarToolStripMenuItem3.Text = "Editar";
+            // 
+            // detalharToolStripMenuItem3
+            // 
+            this.detalharToolStripMenuItem3.Name = "detalharToolStripMenuItem3";
+            this.detalharToolStripMenuItem3.Size = new System.Drawing.Size(218, 36);
+            this.detalharToolStripMenuItem3.Text = "Detalhar";
+            // 
+            // excluirToolStripMenuItem3
+            // 
+            this.excluirToolStripMenuItem3.Name = "excluirToolStripMenuItem3";
+            this.excluirToolStripMenuItem3.Size = new System.Drawing.Size(218, 36);
+            this.excluirToolStripMenuItem3.Text = "Excluir";
+            // 
+            // Lbl_menu
+            // 
+            this.Lbl_menu.AutoSize = true;
+            this.Lbl_menu.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
+            this.Lbl_menu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(122)))), ((int)(((byte)(20)))));
+            this.Lbl_menu.Location = new System.Drawing.Point(109, 25);
+            this.Lbl_menu.Name = "Lbl_menu";
+            this.Lbl_menu.Size = new System.Drawing.Size(85, 32);
+            this.Lbl_menu.TabIndex = 2;
+            this.Lbl_menu.Text = "Menu";
+            // 
             // Frm_HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,6 +402,8 @@ namespace view
             this.Pnl_east.PerformLayout();
             this.Pnl_west.ResumeLayout(false);
             this.Pnl_west.PerformLayout();
+            this.Mnu_east.ResumeLayout(false);
+            this.Mnu_east.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -283,16 +413,33 @@ namespace view
         private System.Windows.Forms.Panel Pnl_south;
         private System.Windows.Forms.Panel Pnl_east;
         private System.Windows.Forms.Label Lbl_imagemLogo;
-        private System.Windows.Forms.Label Lbl_cadastro;
-        private System.Windows.Forms.Button Btn_produto;
-        private System.Windows.Forms.Button Btn_usuario;
-        private System.Windows.Forms.Button Btn_mesa;
-        private System.Windows.Forms.Button Btn_Garcom;
         private System.Windows.Forms.Button Btn_sair;
         private System.Windows.Forms.Button Btn_receitas;
         private System.Windows.Forms.Panel Pnl_west;
         private System.Windows.Forms.Label Lbl_dadosMesa;
         private System.Windows.Forms.Label Lbl_informacaoMesa;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip Mnu_east;
+        private System.Windows.Forms.ToolStripMenuItem produtoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem garçomToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mesaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem detalharToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem detalharToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem detalharToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem detalharToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem3;
+        private System.Windows.Forms.Label Lbl_menu;
     }
 }

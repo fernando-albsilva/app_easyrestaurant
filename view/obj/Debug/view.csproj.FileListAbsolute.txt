@@ -35,3 +35,4 @@ C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csproj.CopyC
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.exe
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.pdb
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csprojAssemblyReference.cache
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.produtoView.Frm_produtoCadastro.resources
