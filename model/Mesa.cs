@@ -9,16 +9,17 @@ namespace model
     public class Mesa
     {
         private string numero;
-        private string nomeCliente;
-        private string idGarcom;
-        private bool disponibilidade;
+        private string nomeCliente = "joao";
+        private string idGarcom = "2";
+        private bool disponibilidade = true;
         private List<Produto> listaDeProduto;
-        private DateTime horaInicio;
-        private DateTime horaTermino;
+        private DateTime horaInicio = new DateTime();
+        private DateTime horaTermino = new DateTime();
 
         public Mesa(string numero)
         {
             this.Numero = numero;
+            this.HoraInicio= DateTime.Now;
             this.listaDeProduto = new List<Produto>();
         }
 

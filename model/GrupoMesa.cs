@@ -10,16 +10,16 @@ namespace model
 
     {
         private static List<Mesa> listaDeMesa = new List<Mesa>();
-
+        private static int indiceMesa;
         //public GrupoMesa()
         //{
         //    listaDeMesa = new List<Mesa>();
         //}
 
 
-        public Mesa buscaMesa(int indice)
+        public Mesa buscaMesa()
         {
-            return listaDeMesa[indice];
+            return listaDeMesa[indiceMesa];
         }
 
         public void adicionaMesaNaLista(Mesa mesa)
@@ -27,6 +27,19 @@ namespace model
             listaDeMesa.Add(mesa);
         }
 
+        // Metodo retorna o numero do botao da mesa clicado
+        public void adicionaNumeroDaMesaParaConsulta(string nomeBotao)
+        {
+            string[] novaString ;
+
+            novaString = nomeBotao.Split('_');
+
+            Console.WriteLine("Nome do botao : " + nomeBotao);
+            //Console.WriteLine("string[0] : " + novaString[0]);
+            //Console.WriteLine("string[2] : : " + novaString[1]);
+            //Console.WriteLine("string[3] : : " + novaString[2]);
+            indiceMesa = Int32.Parse(novaString[2]);
+        }
         
 
     }

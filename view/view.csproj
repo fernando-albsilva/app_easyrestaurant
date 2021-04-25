@@ -79,10 +79,16 @@
     <Compile Include="Frm_LogIn.Designer.cs">
       <DependentUpon>Frm_LogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="produtoView\Frm_produtoCadastro.cs">
+    <Compile Include="viewMesaInformacao\Frm_MesaInformacaoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="produtoView\Frm_produtoCadastro.Designer.cs">
+    <Compile Include="viewMesaInformacao\Frm_MesaInformacaoView.Designer.cs">
+      <DependentUpon>Frm_MesaInformacaoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduto\Frm_produtoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProduto\Frm_produtoCadastro.Designer.cs">
       <DependentUpon>Frm_produtoCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -93,7 +99,10 @@
     <EmbeddedResource Include="Frm_LogIn.resx">
       <DependentUpon>Frm_LogIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="produtoView\Frm_produtoCadastro.resx">
+    <EmbeddedResource Include="viewMesaInformacao\Frm_MesaInformacaoView.resx">
+      <DependentUpon>Frm_MesaInformacaoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProduto\Frm_produtoCadastro.resx">
       <DependentUpon>Frm_produtoCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
