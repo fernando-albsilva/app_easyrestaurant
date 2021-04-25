@@ -150,6 +150,7 @@
     <Content Include="images\IconEasyRestaurant.ico" />
     <Content Include="images\IconEasyRestaurant.png" />
     <Content Include="images\LogoEasyRestaurant.png" />
+    <None Include="images\mesaRestaurante.png" />
     <None Include="images\LogoEasyRestaurantInterface.png" />
   </ItemGroup>
   <ItemGroup />

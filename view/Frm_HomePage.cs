@@ -8,13 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace view
 {
     public partial class Frm_HomePage : Form
     {
+        private int totalMesa;
         public Frm_HomePage()
         {
+           
             InitializeComponent();
+          
         }
 
         private void Frm_HomePage_Load(object sender, EventArgs e)
@@ -40,6 +44,20 @@ namespace view
         }
 
         private void Mnu_east_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Btn_mesa1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Btn_mesa2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
