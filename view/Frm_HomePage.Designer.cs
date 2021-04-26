@@ -130,6 +130,7 @@ namespace view
             this.Btn_sair.TabIndex = 5;
             this.Btn_sair.Text = "Sair";
             this.Btn_sair.UseVisualStyleBackColor = false;
+            this.Btn_sair.Click += new System.EventHandler(this.Btn_sair_Click);
             // 
             // Lbl_imagemLogo
             // 
@@ -644,6 +645,7 @@ namespace view
             this.Controls.Add(this.Pnl_east);
             this.Controls.Add(this.Pnl_south);
             this.Controls.Add(this.Pnl_north);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

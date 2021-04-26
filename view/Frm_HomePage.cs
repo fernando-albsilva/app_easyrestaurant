@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using model;
 using view.viewMesaInformacao;
+using view.viewPopUp;
 
 namespace view
 {
@@ -84,6 +85,20 @@ namespace view
 
         private void Button3_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void Btn_sair_Click(object sender, EventArgs e)
+        {
+            
+            Frm_PopUpSair popUpSair = new Frm_PopUpSair();
+            
+
+            if (popUpSair.ShowDialog(this) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+           
 
         }
     }

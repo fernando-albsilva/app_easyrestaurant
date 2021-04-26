@@ -85,6 +85,12 @@
     <Compile Include="viewMesaInformacao\Frm_MesaInformacaoView.Designer.cs">
       <DependentUpon>Frm_MesaInformacaoView.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewPopUp\Frm_PopUpSair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPopUp\Frm_PopUpSair.Designer.cs">
+      <DependentUpon>Frm_PopUpSair.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewProduto\Frm_produtoCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewMesaInformacao\Frm_MesaInformacaoView.resx">
       <DependentUpon>Frm_MesaInformacaoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPopUp\Frm_PopUpSair.resx">
+      <DependentUpon>Frm_PopUpSair.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewProduto\Frm_produtoCadastro.resx">
       <DependentUpon>Frm_produtoCadastro.cs</DependentUpon>
