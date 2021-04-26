@@ -28,7 +28,7 @@ namespace view
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_HomePage());
+            Application.Run(new Frm_LogIn());
         }
     }
 }

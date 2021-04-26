@@ -143,11 +143,11 @@ namespace view
             this.ClientSize = new System.Drawing.Size(926, 590);
             this.Controls.Add(this.Pnl_container_login);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_LogIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
