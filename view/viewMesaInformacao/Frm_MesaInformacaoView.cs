@@ -94,7 +94,7 @@ namespace view.viewMesaInformacao
 
         private void Btn_inclui_produto_Click(object sender, EventArgs e)
         {
-            Frm_produtoCadastro frm_produtoCadastro = new Frm_produtoCadastro();
+            Frm_produtoInclusao frm_produtoCadastro = new Frm_produtoInclusao();
             frm_produtoCadastro.ShowDialog();
 
             this.CriaListaDeItemPedido();
@@ -135,11 +135,17 @@ namespace view.viewMesaInformacao
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Console.WriteLine(e.RowIndex);
-            Mesa mesa = grupoMesa.BuscaMesa();
-            mesa.Produto.RemoveAt(e.RowIndex);
-            this.CriaListaDeItemPedido();
+            Console.WriteLine(" coluna : " + e.ColumnIndex);
+            if (e.ColumnIndex == 4)
+            {
+                Console.WriteLine(e.RowIndex);
+                Mesa mesa = grupoMesa.BuscaMesa();
+                mesa.Produto.RemoveAt(e.RowIndex);
+                this.CriaListaDeItemPedido();
+            }
         }
+
+   
 
         private void Btn_finaliza_mesa_Click(object sender, EventArgs e)
         {

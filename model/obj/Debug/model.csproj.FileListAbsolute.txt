@@ -6,6 +6,7 @@ C:\Users\PICHAU\source\repos\easyrestaurant\model\obj\Debug\model.dll
 C:\Users\PICHAU\source\repos\easyrestaurant\model\obj\Debug\model.pdb
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\model\bin\Debug\model.dll
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\model\bin\Debug\model.pdb
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\model\obj\Debug\model.csprojAssemblyReference.cache
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\model\obj\Debug\model.csproj.CoreCompileInputs.cache
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\model\obj\Debug\model.dll
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\model\obj\Debug\model.pdb

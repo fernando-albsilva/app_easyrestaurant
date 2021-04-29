@@ -103,6 +103,12 @@
     <Compile Include="viewProduto\Frm_produtoCadastro.Designer.cs">
       <DependentUpon>Frm_produtoCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewProduto\Frm_produtoInclusao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewProduto\Frm_produtoInclusao.Designer.cs">
+      <DependentUpon>Frm_produtoInclusao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_HomePage.resx">
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewProduto\Frm_produtoCadastro.resx">
       <DependentUpon>Frm_produtoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewProduto\Frm_produtoInclusao.resx">
+      <DependentUpon>Frm_produtoInclusao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

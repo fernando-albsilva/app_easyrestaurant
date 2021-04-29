@@ -30,5 +30,18 @@ namespace model
         public List<Produto> Produto { get => listaDeProduto; set => listaDeProduto = value; }
         public DateTime HoraInicio { get => horaInicio; set => horaInicio = value; }
         public DateTime HoraTermino { get => horaTermino; set => horaTermino = value; }
+
+        public double TotalConta()
+        {
+            double totalConta = 0;
+
+            foreach(Produto produto in this.listaDeProduto)
+            {
+                totalConta += (double)(produto.Quantidade * produto.Valor);
+            }
+
+
+            return Math.Round(totalConta,2);
+        }
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using model;
 using view.viewMesaInformacao;
 using view.viewPopUp;
+using view.viewProduto;
 
 namespace view
 {
@@ -52,15 +53,9 @@ namespace view
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
+     
 
-        }
-
-        private void ToolStripComboBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Mnu_east_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -84,10 +79,9 @@ namespace view
            
             
         }
-        private void Btn_mesa2_Click(object sender, EventArgs e)
-        {
-           
-        }
+
+
+       
 
         private void Button3_Click(object sender, EventArgs e)
         {
@@ -117,6 +111,39 @@ namespace view
         private void Pnl_north_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Btn_mesa_1_MouseHover(object sender, EventArgs e)
+        {
+            grupoMesa.AdicionaNumeroDaMesaParaConsulta(Btn_mesa_1.Name);
+
+            Mesa mesa = grupoMesa.BuscaMesa();
+            if (!this.VerificaDisponibilidadeMesa())
+            {
+                this.lbl_numero_mesa.Text = "Mesa : " + (mesa.Numero+1);
+                this.lbl_nome_cliente.Text = "Cliente :" + mesa.NomeCliente;
+                this.lbl_nome_garcom.Text = "Garcom :" + mesa.IdGarcom;
+                this.lbl_total_conta.Text = " Total Conta : R$" + mesa.TotalConta();
+                this.lbl_total_conta_10porcento.Text = "Total Conta c/ 10% : R$"+ (1.1*mesa.TotalConta());
+                this.Lbl_dadosMesa.Text = "Informações Mesa";
+            }
+           
+        }
+
+        private void Btn_mesa_1_MouseLeave(object sender, EventArgs e)
+        {
+            this.lbl_numero_mesa.Text = " ";
+            this.lbl_nome_cliente.Text = " ";
+            this.lbl_nome_garcom.Text = " ";
+            this.lbl_total_conta.Text = " ";
+            this.lbl_total_conta_10porcento.Text = " ";
+            this.Lbl_dadosMesa.Text = "Nenhuma Mesa selecionada.";
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_produtoCadastro frm_produtoCadastro = new Frm_produtoCadastro();
+            frm_produtoCadastro.ShowDialog();
         }
     }
 }

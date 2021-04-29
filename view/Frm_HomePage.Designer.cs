@@ -49,11 +49,6 @@ namespace view
             this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.detalharToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mesaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.detalharToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.excluirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,6 +73,12 @@ namespace view
             this.Btn_mesa4 = new System.Windows.Forms.Button();
             this.Btn_mesa3 = new System.Windows.Forms.Button();
             this.Btn_mesa2 = new System.Windows.Forms.Button();
+            this.lbl_numero_mesa = new System.Windows.Forms.Label();
+            this.lbl_nome_cliente = new System.Windows.Forms.Label();
+            this.lbl_nome_garcom = new System.Windows.Forms.Label();
+            this.lbl_total_conta = new System.Windows.Forms.Label();
+            this.lbl_usuario = new System.Windows.Forms.Label();
+            this.lbl_total_conta_10porcento = new System.Windows.Forms.Label();
             this.Pnl_north.SuspendLayout();
             this.Pnl_south.SuspendLayout();
             this.Pnl_east.SuspendLayout();
@@ -96,7 +97,7 @@ namespace view
             this.Pnl_north.Controls.Add(this.Lbl_imagemLogo);
             this.Pnl_north.Location = new System.Drawing.Point(-2, 0);
             this.Pnl_north.Name = "Pnl_north";
-            this.Pnl_north.Size = new System.Drawing.Size(1759, 105);
+            this.Pnl_north.Size = new System.Drawing.Size(1009, 105);
             this.Pnl_north.TabIndex = 0;
             this.Pnl_north.Paint += new System.Windows.Forms.PaintEventHandler(this.Pnl_north_Paint);
             // 
@@ -109,7 +110,7 @@ namespace view
             this.Btn_receitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_receitas.Font = new System.Drawing.Font("Arial", 15F);
             this.Btn_receitas.ForeColor = System.Drawing.Color.White;
-            this.Btn_receitas.Location = new System.Drawing.Point(1319, 30);
+            this.Btn_receitas.Location = new System.Drawing.Point(569, 30);
             this.Btn_receitas.Name = "Btn_receitas";
             this.Btn_receitas.Size = new System.Drawing.Size(193, 38);
             this.Btn_receitas.TabIndex = 6;
@@ -125,7 +126,7 @@ namespace view
             this.Btn_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_sair.Font = new System.Drawing.Font("Arial", 15F);
             this.Btn_sair.ForeColor = System.Drawing.Color.White;
-            this.Btn_sair.Location = new System.Drawing.Point(1553, 30);
+            this.Btn_sair.Location = new System.Drawing.Point(803, 30);
             this.Btn_sair.Name = "Btn_sair";
             this.Btn_sair.Size = new System.Drawing.Size(193, 38);
             this.Btn_sair.TabIndex = 5;
@@ -147,10 +148,11 @@ namespace view
             this.Pnl_south.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Pnl_south.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(162)))), ((int)(((byte)(44)))));
+            this.Pnl_south.Controls.Add(this.lbl_usuario);
             this.Pnl_south.Controls.Add(this.Lbl_informacoes);
             this.Pnl_south.Location = new System.Drawing.Point(-2, 799);
             this.Pnl_south.Name = "Pnl_south";
-            this.Pnl_south.Size = new System.Drawing.Size(1759, 200);
+            this.Pnl_south.Size = new System.Drawing.Size(1009, 200);
             this.Pnl_south.TabIndex = 1;
             this.Pnl_south.Paint += new System.Windows.Forms.PaintEventHandler(this.Pnl_south_Paint);
             // 
@@ -160,7 +162,7 @@ namespace view
             this.Lbl_informacoes.AutoSize = true;
             this.Lbl_informacoes.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
             this.Lbl_informacoes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(122)))), ((int)(((byte)(20)))));
-            this.Lbl_informacoes.Location = new System.Drawing.Point(790, 20);
+            this.Lbl_informacoes.Location = new System.Drawing.Point(415, 20);
             this.Lbl_informacoes.Name = "Lbl_informacoes";
             this.Lbl_informacoes.Size = new System.Drawing.Size(190, 32);
             this.Lbl_informacoes.TabIndex = 2;
@@ -196,13 +198,12 @@ namespace view
             this.Mnu_east.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.produtoToolStripMenuItem,
             this.garçomToolStripMenuItem,
-            this.mesaToolStripMenuItem,
             this.usuarioToolStripMenuItem});
             this.Mnu_east.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.Mnu_east.Location = new System.Drawing.Point(0, 0);
             this.Mnu_east.Name = "Mnu_east";
             this.Mnu_east.Padding = new System.Windows.Forms.Padding(6, 100, 0, 2);
-            this.Mnu_east.Size = new System.Drawing.Size(303, 328);
+            this.Mnu_east.Size = new System.Drawing.Size(303, 291);
             this.Mnu_east.TabIndex = 0;
             this.Mnu_east.Text = "Menu East";
             this.Mnu_east.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.Mnu_east_ItemClicked);
@@ -230,6 +231,7 @@ namespace view
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
             this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(218, 36);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
+            this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
@@ -287,44 +289,6 @@ namespace view
             this.excluirToolStripMenuItem1.Size = new System.Drawing.Size(218, 36);
             this.excluirToolStripMenuItem1.Text = "Excluir";
             // 
-            // mesaToolStripMenuItem
-            // 
-            this.mesaToolStripMenuItem.AutoSize = false;
-            this.mesaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(132)))), ((int)(((byte)(5)))));
-            this.mesaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarToolStripMenuItem2,
-            this.editarToolStripMenuItem2,
-            this.detalharToolStripMenuItem2,
-            this.excluirToolStripMenuItem2});
-            this.mesaToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.mesaToolStripMenuItem.Name = "mesaToolStripMenuItem";
-            this.mesaToolStripMenuItem.Size = new System.Drawing.Size(200, 36);
-            this.mesaToolStripMenuItem.Text = "Mesa";
-            // 
-            // cadastrarToolStripMenuItem2
-            // 
-            this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(218, 36);
-            this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
-            // 
-            // editarToolStripMenuItem2
-            // 
-            this.editarToolStripMenuItem2.Name = "editarToolStripMenuItem2";
-            this.editarToolStripMenuItem2.Size = new System.Drawing.Size(218, 36);
-            this.editarToolStripMenuItem2.Text = "Editar";
-            // 
-            // detalharToolStripMenuItem2
-            // 
-            this.detalharToolStripMenuItem2.Name = "detalharToolStripMenuItem2";
-            this.detalharToolStripMenuItem2.Size = new System.Drawing.Size(218, 36);
-            this.detalharToolStripMenuItem2.Text = "Detalhar";
-            // 
-            // excluirToolStripMenuItem2
-            // 
-            this.excluirToolStripMenuItem2.Name = "excluirToolStripMenuItem2";
-            this.excluirToolStripMenuItem2.Size = new System.Drawing.Size(218, 36);
-            this.excluirToolStripMenuItem2.Text = "Excluir";
-            // 
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.AutoSize = false;
@@ -368,9 +332,14 @@ namespace view
             this.Pnl_west.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Pnl_west.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(132)))));
+            this.Pnl_west.Controls.Add(this.lbl_total_conta_10porcento);
+            this.Pnl_west.Controls.Add(this.lbl_total_conta);
+            this.Pnl_west.Controls.Add(this.lbl_nome_garcom);
+            this.Pnl_west.Controls.Add(this.lbl_nome_cliente);
+            this.Pnl_west.Controls.Add(this.lbl_numero_mesa);
             this.Pnl_west.Controls.Add(this.Lbl_dadosMesa);
             this.Pnl_west.Controls.Add(this.Lbl_informacaoMesa);
-            this.Pnl_west.Location = new System.Drawing.Point(1454, 111);
+            this.Pnl_west.Location = new System.Drawing.Point(704, 111);
             this.Pnl_west.Name = "Pnl_west";
             this.Pnl_west.Size = new System.Drawing.Size(303, 682);
             this.Pnl_west.TabIndex = 5;
@@ -412,6 +381,8 @@ namespace view
             this.Btn_mesa_1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_mesa_1.UseVisualStyleBackColor = false;
             this.Btn_mesa_1.Click += new System.EventHandler(this.Btn_mesa1_Click);
+            this.Btn_mesa_1.MouseLeave += new System.EventHandler(this.Btn_mesa_1_MouseLeave);
+            this.Btn_mesa_1.MouseHover += new System.EventHandler(this.Btn_mesa_1_MouseHover);
             // 
             // Pnl_center
             // 
@@ -437,7 +408,7 @@ namespace view
             this.Pnl_center.Controls.Add(this.Btn_mesa_1);
             this.Pnl_center.Location = new System.Drawing.Point(307, 111);
             this.Pnl_center.Name = "Pnl_center";
-            this.Pnl_center.Size = new System.Drawing.Size(1141, 682);
+            this.Pnl_center.Size = new System.Drawing.Size(391, 682);
             this.Pnl_center.TabIndex = 6;
             // 
             // Btn_mesa15
@@ -637,11 +608,63 @@ namespace view
             this.Btn_mesa2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_mesa2.UseVisualStyleBackColor = true;
             // 
+            // lbl_numero_mesa
+            // 
+            this.lbl_numero_mesa.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_numero_mesa.Location = new System.Drawing.Point(20, 153);
+            this.lbl_numero_mesa.Name = "lbl_numero_mesa";
+            this.lbl_numero_mesa.Size = new System.Drawing.Size(270, 23);
+            this.lbl_numero_mesa.TabIndex = 2;
+            // 
+            // lbl_nome_cliente
+            // 
+            this.lbl_nome_cliente.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_nome_cliente.Location = new System.Drawing.Point(20, 193);
+            this.lbl_nome_cliente.Name = "lbl_nome_cliente";
+            this.lbl_nome_cliente.Size = new System.Drawing.Size(269, 18);
+            this.lbl_nome_cliente.TabIndex = 3;
+            // 
+            // lbl_nome_garcom
+            // 
+            this.lbl_nome_garcom.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_nome_garcom.Location = new System.Drawing.Point(20, 234);
+            this.lbl_nome_garcom.Name = "lbl_nome_garcom";
+            this.lbl_nome_garcom.Size = new System.Drawing.Size(270, 18);
+            this.lbl_nome_garcom.TabIndex = 4;
+            // 
+            // lbl_total_conta
+            // 
+            this.lbl_total_conta.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_total_conta.Location = new System.Drawing.Point(20, 273);
+            this.lbl_total_conta.Name = "lbl_total_conta";
+            this.lbl_total_conta.Size = new System.Drawing.Size(269, 18);
+            this.lbl_total_conta.TabIndex = 5;
+            // 
+            // lbl_usuario
+            // 
+            this.lbl_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbl_usuario.AutoSize = true;
+            this.lbl_usuario.Font = new System.Drawing.Font("Arial", 15F);
+            this.lbl_usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl_usuario.Location = new System.Drawing.Point(417, 63);
+            this.lbl_usuario.Name = "lbl_usuario";
+            this.lbl_usuario.Size = new System.Drawing.Size(177, 23);
+            this.lbl_usuario.TabIndex = 6;
+            this.lbl_usuario.Text = "Usuario : Fernando";
+            // 
+            // lbl_total_conta_10porcento
+            // 
+            this.lbl_total_conta_10porcento.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_total_conta_10porcento.Location = new System.Drawing.Point(20, 317);
+            this.lbl_total_conta_10porcento.Name = "lbl_total_conta_10porcento";
+            this.lbl_total_conta_10porcento.Size = new System.Drawing.Size(270, 18);
+            this.lbl_total_conta_10porcento.TabIndex = 6;
+            // 
             // Frm_HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1756, 999);
+            this.ClientSize = new System.Drawing.Size(1006, 999);
             this.Controls.Add(this.Pnl_center);
             this.Controls.Add(this.Pnl_west);
             this.Controls.Add(this.Pnl_east);
@@ -683,7 +706,6 @@ namespace view
         private System.Windows.Forms.MenuStrip Mnu_east;
         private System.Windows.Forms.ToolStripMenuItem produtoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem garçomToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mesaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
@@ -693,10 +715,6 @@ namespace view
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem detalharToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem detalharToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem detalharToolStripMenuItem3;
@@ -718,5 +736,11 @@ namespace view
         private System.Windows.Forms.Button Btn_mesa8;
         private System.Windows.Forms.Button Btn_mesa7;
         private System.Windows.Forms.Button Btn_mesa6;
+        private System.Windows.Forms.Label lbl_numero_mesa;
+        private System.Windows.Forms.Label lbl_total_conta;
+        private System.Windows.Forms.Label lbl_nome_garcom;
+        private System.Windows.Forms.Label lbl_nome_cliente;
+        private System.Windows.Forms.Label lbl_usuario;
+        private System.Windows.Forms.Label lbl_total_conta_10porcento;
     }
 }

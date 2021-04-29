@@ -1,7 +1,7 @@
 ﻿
 namespace view.viewProduto
 {
-    partial class Frm_produtoCadastro
+    partial class Frm_produtoInclusao
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,11 @@ namespace view.viewProduto
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_produtoCadastro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_produtoInclusao));
             this.Pnl_principal = new System.Windows.Forms.Panel();
-            this.Btn_inclui_produto = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txt_produto_custo = new System.Windows.Forms.TextBox();
-            this.Lbl_Custo = new System.Windows.Forms.Label();
+            this.txt_produto_quantidade = new System.Windows.Forms.TextBox();
+            this.Lbl_Quantidade = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_produto_valor = new System.Windows.Forms.TextBox();
             this.Lbl_Valor = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@ namespace view.viewProduto
             this.txt_produto_nome = new System.Windows.Forms.TextBox();
             this.Lbl_Nome = new System.Windows.Forms.Label();
             this.Lbl_Produto = new System.Windows.Forms.Label();
+            this.Btn_inclui_produto = new System.Windows.Forms.Button();
             this.Pnl_principal.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,47 +64,33 @@ namespace view.viewProduto
             this.Pnl_principal.Size = new System.Drawing.Size(644, 603);
             this.Pnl_principal.TabIndex = 0;
             // 
-            // Btn_inclui_produto
-            // 
-            this.Btn_inclui_produto.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.Btn_inclui_produto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_inclui_produto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Btn_inclui_produto.Font = new System.Drawing.Font("Arial", 12F);
-            this.Btn_inclui_produto.Location = new System.Drawing.Point(232, 513);
-            this.Btn_inclui_produto.Name = "Btn_inclui_produto";
-            this.Btn_inclui_produto.Size = new System.Drawing.Size(180, 46);
-            this.Btn_inclui_produto.TabIndex = 9;
-            this.Btn_inclui_produto.Text = "Incluir Produto";
-            this.Btn_inclui_produto.UseVisualStyleBackColor = false;
-            this.Btn_inclui_produto.Click += new System.EventHandler(this.Btn_inclui_produto_Click);
-            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.txt_produto_custo);
-            this.panel3.Controls.Add(this.Lbl_Custo);
+            this.panel3.Controls.Add(this.txt_produto_quantidade);
+            this.panel3.Controls.Add(this.Lbl_Quantidade);
             this.panel3.Location = new System.Drawing.Point(144, 384);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(357, 100);
             this.panel3.TabIndex = 6;
             // 
-            // txt_produto_custo
+            // txt_produto_quantidade
             // 
-            this.txt_produto_custo.Font = new System.Drawing.Font("Arial", 15F);
-            this.txt_produto_custo.Location = new System.Drawing.Point(164, 30);
-            this.txt_produto_custo.Name = "txt_produto_custo";
-            this.txt_produto_custo.Size = new System.Drawing.Size(170, 30);
-            this.txt_produto_custo.TabIndex = 4;
+            this.txt_produto_quantidade.Font = new System.Drawing.Font("Arial", 15F);
+            this.txt_produto_quantidade.Location = new System.Drawing.Point(142, 26);
+            this.txt_produto_quantidade.Name = "txt_produto_quantidade";
+            this.txt_produto_quantidade.Size = new System.Drawing.Size(192, 30);
+            this.txt_produto_quantidade.TabIndex = 4;
             // 
-            // Lbl_Custo
+            // Lbl_Quantidade
             // 
-            this.Lbl_Custo.Font = new System.Drawing.Font("Arial", 15F);
-            this.Lbl_Custo.Location = new System.Drawing.Point(16, 33);
-            this.Lbl_Custo.Name = "Lbl_Custo";
-            this.Lbl_Custo.Size = new System.Drawing.Size(147, 23);
-            this.Lbl_Custo.TabIndex = 3;
-            this.Lbl_Custo.Text = "Custo Unitário :";
-            this.Lbl_Custo.Click += new System.EventHandler(this.Lbl_Quantidade_Click);
+            this.Lbl_Quantidade.Font = new System.Drawing.Font("Arial", 15F);
+            this.Lbl_Quantidade.Location = new System.Drawing.Point(16, 33);
+            this.Lbl_Quantidade.Name = "Lbl_Quantidade";
+            this.Lbl_Quantidade.Size = new System.Drawing.Size(129, 23);
+            this.Lbl_Quantidade.TabIndex = 3;
+            this.Lbl_Quantidade.Text = "Quantidade :";
+            this.Lbl_Quantidade.Click += new System.EventHandler(this.Lbl_Quantidade_Click);
             // 
             // panel2
             // 
@@ -119,7 +105,7 @@ namespace view.viewProduto
             // txt_produto_valor
             // 
             this.txt_produto_valor.Font = new System.Drawing.Font("Arial", 15F);
-            this.txt_produto_valor.Location = new System.Drawing.Point(87, 32);
+            this.txt_produto_valor.Location = new System.Drawing.Point(87, 20);
             this.txt_produto_valor.Name = "txt_produto_valor";
             this.txt_produto_valor.Size = new System.Drawing.Size(247, 30);
             this.txt_produto_valor.TabIndex = 3;
@@ -127,7 +113,7 @@ namespace view.viewProduto
             // Lbl_Valor
             // 
             this.Lbl_Valor.Font = new System.Drawing.Font("Arial", 15F);
-            this.Lbl_Valor.Location = new System.Drawing.Point(16, 39);
+            this.Lbl_Valor.Location = new System.Drawing.Point(16, 27);
             this.Lbl_Valor.Name = "Lbl_Valor";
             this.Lbl_Valor.Size = new System.Drawing.Size(100, 23);
             this.Lbl_Valor.TabIndex = 2;
@@ -165,11 +151,25 @@ namespace view.viewProduto
             // Lbl_Produto
             // 
             this.Lbl_Produto.Font = new System.Drawing.Font("Arial", 20F);
-            this.Lbl_Produto.Location = new System.Drawing.Point(201, 43);
+            this.Lbl_Produto.Location = new System.Drawing.Point(198, 49);
             this.Lbl_Produto.Name = "Lbl_Produto";
-            this.Lbl_Produto.Size = new System.Drawing.Size(264, 37);
+            this.Lbl_Produto.Size = new System.Drawing.Size(220, 37);
             this.Lbl_Produto.TabIndex = 0;
-            this.Lbl_Produto.Text = "Cadastro Produto";
+            this.Lbl_Produto.Text = "Inclusão Produto";
+            // 
+            // Btn_inclui_produto
+            // 
+            this.Btn_inclui_produto.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.Btn_inclui_produto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_inclui_produto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_inclui_produto.Font = new System.Drawing.Font("Arial", 12F);
+            this.Btn_inclui_produto.Location = new System.Drawing.Point(232, 513);
+            this.Btn_inclui_produto.Name = "Btn_inclui_produto";
+            this.Btn_inclui_produto.Size = new System.Drawing.Size(180, 46);
+            this.Btn_inclui_produto.TabIndex = 9;
+            this.Btn_inclui_produto.Text = "Incluir Produto";
+            this.Btn_inclui_produto.UseVisualStyleBackColor = false;
+            this.Btn_inclui_produto.Click += new System.EventHandler(this.Btn_inclui_produto_Click);
             // 
             // Frm_produtoCadastro
             // 
@@ -183,7 +183,7 @@ namespace view.viewProduto
             this.MinimizeBox = false;
             this.Name = "Frm_produtoCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastrar Produto";
+            this.Text = "Incluir Produto";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Frm_produtoCadastro_Load);
             this.Pnl_principal.ResumeLayout(false);
@@ -203,13 +203,16 @@ namespace view.viewProduto
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label Lbl_Nome;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label Lbl_Custo;
+        private System.Windows.Forms.Label Lbl_Quantidade;
         private System.Windows.Forms.Label Lbl_Valor;
         private System.Windows.Forms.Label Lbl_Produto;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txt_produto_nome;
         private System.Windows.Forms.TextBox txt_produto_valor;
-        private System.Windows.Forms.TextBox txt_produto_custo;
+        private System.Windows.Forms.TextBox txt_produto_quantidade;
         private System.Windows.Forms.Button Btn_inclui_produto;
     }
+
+
+
 }

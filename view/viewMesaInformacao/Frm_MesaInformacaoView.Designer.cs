@@ -210,6 +210,7 @@ namespace view.viewMesaInformacao
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -377,12 +378,14 @@ namespace view.viewMesaInformacao
             // 
             this.dt_produto.HeaderText = "Produto";
             this.dt_produto.Name = "dt_produto";
+            this.dt_produto.ReadOnly = true;
             this.dt_produto.Width = 150;
             // 
             // dt_qtd
             // 
             this.dt_qtd.HeaderText = "Qtd";
             this.dt_qtd.Name = "dt_qtd";
+            this.dt_qtd.ReadOnly = true;
             this.dt_qtd.Width = 50;
             // 
             // dt_valor
@@ -392,6 +395,7 @@ namespace view.viewMesaInformacao
             this.dt_valor.DefaultCellStyle = dataGridViewCellStyle1;
             this.dt_valor.HeaderText = "Valor";
             this.dt_valor.Name = "dt_valor";
+            this.dt_valor.ReadOnly = true;
             this.dt_valor.Width = 75;
             // 
             // dt_total
@@ -401,6 +405,7 @@ namespace view.viewMesaInformacao
             this.dt_total.DefaultCellStyle = dataGridViewCellStyle2;
             this.dt_total.HeaderText = "Total";
             this.dt_total.Name = "dt_total";
+            this.dt_total.ReadOnly = true;
             this.dt_total.Width = 75;
             // 
             // dt_excluir_item
@@ -416,6 +421,7 @@ namespace view.viewMesaInformacao
             this.dt_excluir_item.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dt_excluir_item.HeaderText = "Excluir";
             this.dt_excluir_item.Name = "dt_excluir_item";
+            this.dt_excluir_item.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dt_excluir_item.Text = "X";
             this.dt_excluir_item.UseColumnTextForButtonValue = true;
             this.dt_excluir_item.Width = 50;

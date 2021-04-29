@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using model;
 
 namespace view.viewProduto
 {
-    public partial class Frm_produtoCadastro : Form
+    public partial class Frm_produtoInclusao : Form
     {
-        
-        public Frm_produtoCadastro()
+        public Frm_produtoInclusao()
         {
             InitializeComponent();
         }
@@ -22,7 +22,8 @@ namespace view.viewProduto
         {
 
         }
-     
+
+
 
         private void Pnl_south_Paint(object sender, PaintEventArgs e)
         {
@@ -51,6 +52,15 @@ namespace view.viewProduto
 
         private void Btn_inclui_produto_Click(object sender, EventArgs e)
         {
+            Produto produto = new Produto();
+            produto.Nome = txt_produto_nome.Text.ToString();
+            produto.Valor = Convert.ToDecimal(txt_produto_valor.Text.ToString());
+            produto.Quantidade = Convert.ToDecimal(txt_produto_quantidade.Text.ToString());
+
+            GrupoMesa grupoMesa = new GrupoMesa();
+            grupoMesa.AdicionaProdutoNaMesa(produto);
+
+           
             this.Close();
         }
     }
