@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using model;
 using control;
+using view.viewPopUp;
 
 namespace view
 {
@@ -51,7 +52,11 @@ namespace view
             }
             else
             {
-              
+                
+                
+                Frm_PopUpAvisoLogIn frm_aviso = new Frm_PopUpAvisoLogIn();
+
+                frm_aviso.ShowDialog();
                 Console.WriteLine("usuario recusado");
             }
         }

@@ -9,8 +9,8 @@ namespace model
     public class Mesa
     {
         private string numero;
-        private string nomeCliente = "joao";
-        private string idGarcom = "2";
+        private string nomeCliente = "";
+        private string idGarcom = "";
         private bool disponibilidade = true;
         private List<Produto> listaDeProduto;
         private DateTime horaInicio = new DateTime();

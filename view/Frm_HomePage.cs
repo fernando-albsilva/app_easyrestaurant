@@ -70,13 +70,12 @@ namespace view
         private void Btn_mesa1_Click(object sender, EventArgs e)
         {
             
-
+            grupoMesa.AdicionaNumeroDaMesaParaConsulta(Btn_mesa_1.Name);
             Frm_MesaInformacaoView frm_mesaInformacaoView = new Frm_MesaInformacaoView();
             frm_mesaInformacaoView.ShowDialog();
 
-            grupoMesa.adicionaNumeroDaMesaParaConsulta(Btn_mesa_1.Name);
-
-
+           
+            
         }
         private void Btn_mesa2_Click(object sender, EventArgs e)
         {

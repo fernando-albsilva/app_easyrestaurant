@@ -30,8 +30,9 @@ C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csprojAssemb
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Frm_HomePage.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Frm_LogIn.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewMesaInformacao.Frm_MesaInformacaoView.resources
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewPopUp.Frm_PopUpAvisoLogIn.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewPopUp.Frm_PopUpSair.resources
-C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.produtoView.Frm_produtoCadastro.resources
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewProduto.Frm_produtoCadastro.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Properties.Resources.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csproj.GenerateResource.cache
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csproj.CoreCompileInputs.cache

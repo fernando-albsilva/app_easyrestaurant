@@ -17,18 +17,19 @@ namespace model
         //}
 
 
-        public Mesa buscaMesa()
+        public Mesa BuscaMesa()
         {
+            Console.WriteLine("indice lista :"+ indiceMesa);
             return listaDeMesa[indiceMesa];
         }
 
-        public void adicionaMesaNaLista(Mesa mesa)
+        public void AdicionaMesaNaLista(Mesa mesa)
         {
             listaDeMesa.Add(mesa);
         }
 
         // Metodo retorna o numero do botao da mesa clicado
-        public void adicionaNumeroDaMesaParaConsulta(string nomeBotao)
+        public void AdicionaNumeroDaMesaParaConsulta(string nomeBotao)
         {
             string[] novaString ;
 
@@ -39,8 +40,13 @@ namespace model
             //Console.WriteLine("string[2] : : " + novaString[1]);
             //Console.WriteLine("string[3] : : " + novaString[2]);
             indiceMesa = Int32.Parse(novaString[2]);
+            indiceMesa--;
         }
         
+        public void AdicionaProdutoNaMesa(Produto produto)
+        {
+            listaDeMesa[indiceMesa].Produto.Add(produto);
+        }
 
     }
 }

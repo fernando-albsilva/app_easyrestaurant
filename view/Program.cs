@@ -22,7 +22,7 @@ namespace view
             for ( int i=0; i<15;i++)
             {
                 Mesa mesa = new Mesa(i.ToString());
-                grupoMesa.adicionaMesaNaLista(mesa);
+                grupoMesa.AdicionaMesaNaLista(mesa);
             }
            
 
