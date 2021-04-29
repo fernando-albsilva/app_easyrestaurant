@@ -34,6 +34,8 @@ namespace view.viewMesaInformacao
                 this.Btn_inicia_mesa.Enabled = false;
                 this.Btn_finaliza_mesa.Enabled = true;
                 this.Btn_inclui_produto.Enabled = true;
+                this.Txt_nome_cliente.Enabled = false;
+                this.Txt_garcom.Enabled = false;
                 this.Lbl_mesaNumero.Text += " " + mesa.Numero + 1;
                 this.Lbl_nomeCLiente.Text += " " + mesa.NomeCliente;
                 this.Lbl_horaDeInicio.Text += " " + mesa.HoraInicio;
@@ -81,6 +83,8 @@ namespace view.viewMesaInformacao
             this.Lbl_horaDeInicio.Text += " " + mesa.HoraInicio;
             this.Lbl_nomeGarcom.Text += " " + mesa.IdGarcom;
             this.Btn_inicia_mesa.Enabled = false;
+            this.Txt_nome_cliente.Enabled = false;
+            this.Txt_garcom.Enabled = false;
             this.Btn_finaliza_mesa.Enabled = true;
             this.Btn_inclui_produto.Enabled = true;
 
@@ -102,26 +106,25 @@ namespace view.viewMesaInformacao
         {
             Mesa mesa = grupoMesa.BuscaMesa();
             this.dataGridView1.Rows.Clear();
-            decimal totalConta = 0;
+            double totalConta = 0;
 
             foreach (Produto produto in mesa.Produto)
             {
-                totalConta += (decimal)produto.Valor * (decimal)produto.Quantidade;
+                totalConta += (double)produto.Valor * (double)produto.Quantidade;
                 this.dataGridView1.Rows.Add(
                     new Object[]
                     {
                         produto.Nome,
                         produto.Quantidade,
                         produto.Valor,
-                       ((decimal)produto.Valor*(decimal)produto.Quantidade).ToString()
+                       ((double)produto.Valor*(double)produto.Quantidade)
 
                     });
             }
 
-            this.lbl_valor_conta.Text = totalConta.ToString();
-            this.lbl_valor_10porcento.Text = ((double)totalConta * 0.1).ToString();
-            this.lbl_total_com_10porcento.Text = ((double)totalConta * 1.1).ToString();
-
+            this.lbl_valor_conta.Text ="R$ "+ Math.Round(totalConta,2).ToString();
+            this.lbl_valor_10porcento.Text = "R$ " + Math.Round(((double)totalConta * 0.1),2).ToString();
+            this.lbl_total_com_10porcento.Text = "R$ " + Math.Round(((double)totalConta * 1.1),2).ToString();
         }
 
 
@@ -153,7 +156,7 @@ namespace view.viewMesaInformacao
             mesa.Disponibilidade = true;
             mesa.Produto = new List<Produto>();
             mesa.HoraInicio = new DateTime();
-
+           
             this.Close();
 
 

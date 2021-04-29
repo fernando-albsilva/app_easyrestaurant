@@ -30,8 +30,10 @@ namespace view.viewMesaInformacao
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_MesaInformacaoView));
             this.Lbl_mesaNumero = new System.Windows.Forms.Label();
             this.Lbl_nomeCLiente = new System.Windows.Forms.Label();
@@ -139,9 +141,9 @@ namespace view.viewMesaInformacao
             this.lbl_total_com_10porcento.Font = new System.Drawing.Font("Arial", 12F);
             this.lbl_total_com_10porcento.Location = new System.Drawing.Point(170, 541);
             this.lbl_total_com_10porcento.Name = "lbl_total_com_10porcento";
-            this.lbl_total_com_10porcento.Size = new System.Drawing.Size(48, 18);
+            this.lbl_total_com_10porcento.Size = new System.Drawing.Size(72, 18);
             this.lbl_total_com_10porcento.TabIndex = 16;
-            this.lbl_total_com_10porcento.Text = "00.00";
+            this.lbl_total_com_10porcento.Text = "R$ 00.00";
             // 
             // lbl_valor_10porcento
             // 
@@ -149,9 +151,9 @@ namespace view.viewMesaInformacao
             this.lbl_valor_10porcento.Font = new System.Drawing.Font("Arial", 12F);
             this.lbl_valor_10porcento.Location = new System.Drawing.Point(72, 514);
             this.lbl_valor_10porcento.Name = "lbl_valor_10porcento";
-            this.lbl_valor_10porcento.Size = new System.Drawing.Size(48, 18);
+            this.lbl_valor_10porcento.Size = new System.Drawing.Size(72, 18);
             this.lbl_valor_10porcento.TabIndex = 15;
-            this.lbl_valor_10porcento.Text = "00.00";
+            this.lbl_valor_10porcento.Text = "R$ 00.00";
             // 
             // lbl_valor_conta
             // 
@@ -159,9 +161,9 @@ namespace view.viewMesaInformacao
             this.lbl_valor_conta.Font = new System.Drawing.Font("Arial", 12F);
             this.lbl_valor_conta.Location = new System.Drawing.Point(118, 480);
             this.lbl_valor_conta.Name = "lbl_valor_conta";
-            this.lbl_valor_conta.Size = new System.Drawing.Size(48, 18);
+            this.lbl_valor_conta.Size = new System.Drawing.Size(72, 18);
             this.lbl_valor_conta.TabIndex = 14;
-            this.lbl_valor_conta.Text = "00.00";
+            this.lbl_valor_conta.Text = "R$ 00.00";
             // 
             // lbl_total_conta
             // 
@@ -217,14 +219,14 @@ namespace view.viewMesaInformacao
             this.dt_valor,
             this.dt_total,
             this.dt_excluir_item});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(443, 406);
@@ -375,7 +377,7 @@ namespace view.viewMesaInformacao
             // 
             this.dt_produto.HeaderText = "Produto";
             this.dt_produto.Name = "dt_produto";
-            this.dt_produto.Width = 200;
+            this.dt_produto.Width = 150;
             // 
             // dt_qtd
             // 
@@ -385,26 +387,32 @@ namespace view.viewMesaInformacao
             // 
             // dt_valor
             // 
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.dt_valor.DefaultCellStyle = dataGridViewCellStyle1;
             this.dt_valor.HeaderText = "Valor";
             this.dt_valor.Name = "dt_valor";
-            this.dt_valor.Width = 50;
+            this.dt_valor.Width = 75;
             // 
             // dt_total
             // 
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.dt_total.DefaultCellStyle = dataGridViewCellStyle2;
             this.dt_total.HeaderText = "Total";
             this.dt_total.Name = "dt_total";
-            this.dt_total.Width = 50;
+            this.dt_total.Width = 75;
             // 
             // dt_excluir_item
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.NullValue = null;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dt_excluir_item.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 8.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.NullValue = null;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dt_excluir_item.DefaultCellStyle = dataGridViewCellStyle3;
             this.dt_excluir_item.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dt_excluir_item.HeaderText = "Excluir";
             this.dt_excluir_item.Name = "dt_excluir_item";
