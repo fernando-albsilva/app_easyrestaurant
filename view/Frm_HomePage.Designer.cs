@@ -98,6 +98,7 @@ namespace view
             this.Pnl_north.Name = "Pnl_north";
             this.Pnl_north.Size = new System.Drawing.Size(1759, 105);
             this.Pnl_north.TabIndex = 0;
+            this.Pnl_north.Paint += new System.Windows.Forms.PaintEventHandler(this.Pnl_north_Paint);
             // 
             // Btn_receitas
             // 
@@ -398,6 +399,7 @@ namespace view
             // 
             // Btn_mesa_1
             // 
+            this.Btn_mesa_1.BackColor = System.Drawing.Color.Gainsboro;
             this.Btn_mesa_1.BackgroundImage = global::view.Properties.Resources.mesaRestaurante;
             this.Btn_mesa_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa_1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -408,7 +410,7 @@ namespace view
             this.Btn_mesa_1.TabIndex = 6;
             this.Btn_mesa_1.Text = "Mesa 01";
             this.Btn_mesa_1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_mesa_1.UseVisualStyleBackColor = true;
+            this.Btn_mesa_1.UseVisualStyleBackColor = false;
             this.Btn_mesa_1.Click += new System.EventHandler(this.Btn_mesa1_Click);
             // 
             // Pnl_center

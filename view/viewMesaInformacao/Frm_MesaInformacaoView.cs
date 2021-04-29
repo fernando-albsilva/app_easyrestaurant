@@ -18,8 +18,8 @@ namespace view.viewMesaInformacao
         public Frm_MesaInformacaoView()
         {
             InitializeComponent();
-           
-          
+
+
         }
 
         private void Frm_MesaInformacaoView_Load(object sender, EventArgs e)
@@ -34,34 +34,13 @@ namespace view.viewMesaInformacao
                 this.Btn_inicia_mesa.Enabled = false;
                 this.Btn_finaliza_mesa.Enabled = true;
                 this.Btn_inclui_produto.Enabled = true;
-                this.Btn_edita_produto.Enabled = true;
-                this.Btn_excluir_produto.Enabled = true;
-                this.Lbl_mesaNumero.Text += " " + mesa.Numero+1;
+                this.Lbl_mesaNumero.Text += " " + mesa.Numero + 1;
                 this.Lbl_nomeCLiente.Text += " " + mesa.NomeCliente;
                 this.Lbl_horaDeInicio.Text += " " + mesa.HoraInicio;
                 this.Lbl_nomeGarcom.Text += " " + mesa.IdGarcom;
 
-               // mesa mesa = grupomesa.buscamesa();
-                this.dataGridView1.Rows.Clear();
-                decimal totalConta = 0;
+                this.CriaListaDeItemPedido();
 
-                foreach (Produto produto in mesa.Produto)
-                {
-                    totalConta += (decimal)produto.Valor * (decimal)produto.Quantidade;
-                    this.dataGridView1.Rows.Add(
-                        new Object[]
-                        {
-                        produto.Nome,
-                        produto.Quantidade,
-                        produto.Valor,
-                       ((decimal)produto.Valor*(decimal)produto.Quantidade).ToString()
-
-                        });
-                }
-
-                this.lbl_valor_conta.Text = totalConta.ToString();
-                this.lbl_valor_10porcento.Text = ((double)totalConta * 0.1).ToString();
-                this.lbl_total_com_10porcento.Text = ((double)totalConta * 1.1).ToString();
             }
         }
 
@@ -80,7 +59,7 @@ namespace view.viewMesaInformacao
 
         }
 
-     
+
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
@@ -97,15 +76,13 @@ namespace view.viewMesaInformacao
             mesa.IdGarcom = Txt_garcom.Text;
             mesa.Disponibilidade = false;
             Console.WriteLine(mesa.Numero);
-            this.Lbl_mesaNumero.Text +=" "+ mesa.Numero+1;
-            this.Lbl_nomeCLiente.Text +=" "+ mesa.NomeCliente;
-            this.Lbl_horaDeInicio.Text +=" "+ mesa.HoraInicio;
-            this.Lbl_nomeGarcom.Text +=" "+ mesa.IdGarcom;
+            this.Lbl_mesaNumero.Text += " " + mesa.Numero + 1;
+            this.Lbl_nomeCLiente.Text += " " + mesa.NomeCliente;
+            this.Lbl_horaDeInicio.Text += " " + mesa.HoraInicio;
+            this.Lbl_nomeGarcom.Text += " " + mesa.IdGarcom;
             this.Btn_inicia_mesa.Enabled = false;
             this.Btn_finaliza_mesa.Enabled = true;
             this.Btn_inclui_produto.Enabled = true;
-            this.Btn_edita_produto.Enabled = true;
-            this.Btn_excluir_produto.Enabled = true;
 
             grupoMesa.AdicionaMesaNaLista(mesa);
 
@@ -115,12 +92,21 @@ namespace view.viewMesaInformacao
         {
             Frm_produtoCadastro frm_produtoCadastro = new Frm_produtoCadastro();
             frm_produtoCadastro.ShowDialog();
+
+            this.CriaListaDeItemPedido();
+
+
+        }
+
+        private void CriaListaDeItemPedido()
+        {
             Mesa mesa = grupoMesa.BuscaMesa();
             this.dataGridView1.Rows.Clear();
-            decimal totalConta=0;
+            decimal totalConta = 0;
 
-            foreach (Produto produto in mesa.Produto) {
-                totalConta += (decimal)produto.Valor*(decimal)produto.Quantidade;
+            foreach (Produto produto in mesa.Produto)
+            {
+                totalConta += (decimal)produto.Valor * (decimal)produto.Quantidade;
                 this.dataGridView1.Rows.Add(
                     new Object[]
                     {
@@ -129,21 +115,55 @@ namespace view.viewMesaInformacao
                         produto.Valor,
                        ((decimal)produto.Valor*(decimal)produto.Quantidade).ToString()
 
-                    }) ;
-             }
-            
-            this.lbl_valor_conta.Text  = totalConta.ToString();
-            this.lbl_valor_10porcento.Text = ((double)totalConta*0.1).ToString();
+                    });
+            }
+
+            this.lbl_valor_conta.Text = totalConta.ToString();
+            this.lbl_valor_10porcento.Text = ((double)totalConta * 0.1).ToString();
             this.lbl_total_com_10porcento.Text = ((double)totalConta * 1.1).ToString();
-            //this.dt_produto.datasource = produto.nome;
-            //this.dt_qtd = produto.quantidade;
-            //this.dt_valor = produto.valor;
 
         }
+
 
         private void Lbl_total_conta_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Console.WriteLine(e.RowIndex);
+            Mesa mesa = grupoMesa.BuscaMesa();
+            mesa.Produto.RemoveAt(e.RowIndex);
+            this.CriaListaDeItemPedido();
+        }
+
+        private void Btn_finaliza_mesa_Click(object sender, EventArgs e)
+        {
+            Mesa mesa = grupoMesa.BuscaMesa();
+            
+            
+            //implementar a gravacao da conta finalizada no banco de dados;
+            //antes de limpar os dados
+            
+            
+            //limpa os dados da mesa na memoria para proximo uso da mesma
+            mesa.NomeCliente = "";
+            mesa.IdGarcom = "";
+            mesa.Disponibilidade = true;
+            mesa.Produto = new List<Produto>();
+            mesa.HoraInicio = new DateTime();
+
+            this.Close();
+
+
+            //   private string numero;
+            //private string nomeCliente = "";
+            //private string idGarcom = "";
+            //private bool disponibilidade = true;
+            //private List<Produto> listaDeProduto;
+            //private DateTime horaInicio = new DateTime();
+            //private DateTime horaTermino = new DateTime();
         }
     }
 }

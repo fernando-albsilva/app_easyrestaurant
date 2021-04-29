@@ -73,7 +73,14 @@ namespace view
             grupoMesa.AdicionaNumeroDaMesaParaConsulta(Btn_mesa_1.Name);
             Frm_MesaInformacaoView frm_mesaInformacaoView = new Frm_MesaInformacaoView();
             frm_mesaInformacaoView.ShowDialog();
-
+            if (!this.VerificaDisponibilidadeMesa())
+            {
+                this.Btn_mesa_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(132)))), ((int)(((byte)(5)))));
+            }
+            else
+            {
+                this.Btn_mesa_1.BackColor = System.Drawing.Color.Gainsboro;
+            }
            
             
         }
@@ -98,6 +105,17 @@ namespace view
                 Application.Exit();
             }
            
+
+        }
+
+        private bool VerificaDisponibilidadeMesa()
+        {
+            Mesa mesa = grupoMesa.BuscaMesa();
+            return mesa.Disponibilidade;
+        }
+
+        private void Pnl_north_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

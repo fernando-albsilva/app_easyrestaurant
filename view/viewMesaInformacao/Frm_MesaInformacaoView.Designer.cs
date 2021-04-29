@@ -30,26 +30,25 @@ namespace view.viewMesaInformacao
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_MesaInformacaoView));
             this.Lbl_mesaNumero = new System.Windows.Forms.Label();
             this.Lbl_nomeCLiente = new System.Windows.Forms.Label();
             this.Lbl_horaDeInicio = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_total_com_10porcento = new System.Windows.Forms.Label();
+            this.lbl_valor_10porcento = new System.Windows.Forms.Label();
+            this.lbl_valor_conta = new System.Windows.Forms.Label();
             this.lbl_total_conta = new System.Windows.Forms.Label();
             this.Lbl_10porcento = new System.Windows.Forms.Label();
             this.Lbl_total_conta_10porcento = new System.Windows.Forms.Label();
             this.Pnl_conta_detalhada = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dt_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dt_qtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dt_valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dt_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lbl_conta_detalhe = new System.Windows.Forms.Label();
             this.Pnl_center = new System.Windows.Forms.Panel();
             this.Lbl_nomeGarcom = new System.Windows.Forms.Label();
-            this.Btn_edita_produto = new System.Windows.Forms.Button();
-            this.Btn_excluir_produto = new System.Windows.Forms.Button();
             this.Btn_inclui_produto = new System.Windows.Forms.Button();
             this.Pnl_east = new System.Windows.Forms.Panel();
             this.Btn_finaliza_mesa = new System.Windows.Forms.Button();
@@ -59,9 +58,11 @@ namespace view.viewMesaInformacao
             this.Lbl_garcom = new System.Windows.Forms.Label();
             this.Txt_nome_cliente = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.lbl_valor_conta = new System.Windows.Forms.Label();
-            this.lbl_valor_10porcento = new System.Windows.Forms.Label();
-            this.lbl_total_com_10porcento = new System.Windows.Forms.Label();
+            this.dt_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dt_qtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dt_valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dt_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dt_excluir_item = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.Pnl_conta_detalhada.SuspendLayout();
@@ -74,7 +75,7 @@ namespace view.viewMesaInformacao
             // 
             this.Lbl_mesaNumero.AutoSize = true;
             this.Lbl_mesaNumero.Font = new System.Drawing.Font("Arial", 12F);
-            this.Lbl_mesaNumero.Location = new System.Drawing.Point(26, 28);
+            this.Lbl_mesaNumero.Location = new System.Drawing.Point(26, 42);
             this.Lbl_mesaNumero.Name = "Lbl_mesaNumero";
             this.Lbl_mesaNumero.Size = new System.Drawing.Size(114, 18);
             this.Lbl_mesaNumero.TabIndex = 0;
@@ -84,7 +85,7 @@ namespace view.viewMesaInformacao
             // 
             this.Lbl_nomeCLiente.AutoSize = true;
             this.Lbl_nomeCLiente.Font = new System.Drawing.Font("Arial", 12F);
-            this.Lbl_nomeCLiente.Location = new System.Drawing.Point(26, 72);
+            this.Lbl_nomeCLiente.Location = new System.Drawing.Point(27, 111);
             this.Lbl_nomeCLiente.Name = "Lbl_nomeCLiente";
             this.Lbl_nomeCLiente.Size = new System.Drawing.Size(129, 18);
             this.Lbl_nomeCLiente.TabIndex = 1;
@@ -94,7 +95,7 @@ namespace view.viewMesaInformacao
             // 
             this.Lbl_horaDeInicio.AutoSize = true;
             this.Lbl_horaDeInicio.Font = new System.Drawing.Font("Arial", 12F);
-            this.Lbl_horaDeInicio.Location = new System.Drawing.Point(27, 117);
+            this.Lbl_horaDeInicio.Location = new System.Drawing.Point(27, 179);
             this.Lbl_horaDeInicio.Name = "Lbl_horaDeInicio";
             this.Lbl_horaDeInicio.Size = new System.Drawing.Size(113, 18);
             this.Lbl_horaDeInicio.TabIndex = 2;
@@ -131,6 +132,36 @@ namespace view.viewMesaInformacao
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(475, 575);
             this.panel2.TabIndex = 10;
+            // 
+            // lbl_total_com_10porcento
+            // 
+            this.lbl_total_com_10porcento.AutoSize = true;
+            this.lbl_total_com_10porcento.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_total_com_10porcento.Location = new System.Drawing.Point(170, 541);
+            this.lbl_total_com_10porcento.Name = "lbl_total_com_10porcento";
+            this.lbl_total_com_10porcento.Size = new System.Drawing.Size(48, 18);
+            this.lbl_total_com_10porcento.TabIndex = 16;
+            this.lbl_total_com_10porcento.Text = "00.00";
+            // 
+            // lbl_valor_10porcento
+            // 
+            this.lbl_valor_10porcento.AutoSize = true;
+            this.lbl_valor_10porcento.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_valor_10porcento.Location = new System.Drawing.Point(72, 514);
+            this.lbl_valor_10porcento.Name = "lbl_valor_10porcento";
+            this.lbl_valor_10porcento.Size = new System.Drawing.Size(48, 18);
+            this.lbl_valor_10porcento.TabIndex = 15;
+            this.lbl_valor_10porcento.Text = "00.00";
+            // 
+            // lbl_valor_conta
+            // 
+            this.lbl_valor_conta.AutoSize = true;
+            this.lbl_valor_conta.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_valor_conta.Location = new System.Drawing.Point(118, 480);
+            this.lbl_valor_conta.Name = "lbl_valor_conta";
+            this.lbl_valor_conta.Size = new System.Drawing.Size(48, 18);
+            this.lbl_valor_conta.TabIndex = 14;
+            this.lbl_valor_conta.Text = "00.00";
             // 
             // lbl_total_conta
             // 
@@ -177,36 +208,28 @@ namespace view.viewMesaInformacao
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dt_produto,
             this.dt_qtd,
             this.dt_valor,
-            this.dt_total});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dt_total,
+            this.dt_excluir_item});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(440, 400);
+            this.dataGridView1.Size = new System.Drawing.Size(443, 406);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // dt_produto
-            // 
-            this.dt_produto.HeaderText = "Produto";
-            this.dt_produto.Name = "dt_produto";
-            // 
-            // dt_qtd
-            // 
-            this.dt_qtd.HeaderText = "Qtd";
-            this.dt_qtd.Name = "dt_qtd";
-            // 
-            // dt_valor
-            // 
-            this.dt_valor.HeaderText = "Valor";
-            this.dt_valor.Name = "dt_valor";
-            // 
-            // dt_total
-            // 
-            this.dt_total.HeaderText = "Total";
-            this.dt_total.Name = "dt_total";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Lbl_conta_detalhe
             // 
@@ -224,8 +247,6 @@ namespace view.viewMesaInformacao
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Pnl_center.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pnl_center.Controls.Add(this.Lbl_nomeGarcom);
-            this.Pnl_center.Controls.Add(this.Btn_edita_produto);
-            this.Pnl_center.Controls.Add(this.Btn_excluir_produto);
             this.Pnl_center.Controls.Add(this.Lbl_mesaNumero);
             this.Pnl_center.Controls.Add(this.Btn_inclui_produto);
             this.Pnl_center.Controls.Add(this.Lbl_nomeCLiente);
@@ -239,40 +260,11 @@ namespace view.viewMesaInformacao
             // 
             this.Lbl_nomeGarcom.AutoSize = true;
             this.Lbl_nomeGarcom.Font = new System.Drawing.Font("Arial", 12F);
-            this.Lbl_nomeGarcom.Location = new System.Drawing.Point(27, 158);
+            this.Lbl_nomeGarcom.Location = new System.Drawing.Point(26, 254);
             this.Lbl_nomeGarcom.Name = "Lbl_nomeGarcom";
             this.Lbl_nomeGarcom.Size = new System.Drawing.Size(114, 18);
             this.Lbl_nomeGarcom.TabIndex = 11;
             this.Lbl_nomeGarcom.Text = "Nome Garçom:";
-            // 
-            // Btn_edita_produto
-            // 
-            this.Btn_edita_produto.BackColor = System.Drawing.Color.Gold;
-            this.Btn_edita_produto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_edita_produto.Enabled = false;
-            this.Btn_edita_produto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Btn_edita_produto.Font = new System.Drawing.Font("Arial", 12F);
-            this.Btn_edita_produto.Location = new System.Drawing.Point(76, 429);
-            this.Btn_edita_produto.Name = "Btn_edita_produto";
-            this.Btn_edita_produto.Size = new System.Drawing.Size(180, 46);
-            this.Btn_edita_produto.TabIndex = 10;
-            this.Btn_edita_produto.Text = "Editar Produto";
-            this.Btn_edita_produto.UseVisualStyleBackColor = false;
-            this.Btn_edita_produto.Click += new System.EventHandler(this.Button1_Click_1);
-            // 
-            // Btn_excluir_produto
-            // 
-            this.Btn_excluir_produto.BackColor = System.Drawing.Color.Salmon;
-            this.Btn_excluir_produto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_excluir_produto.Enabled = false;
-            this.Btn_excluir_produto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Btn_excluir_produto.Font = new System.Drawing.Font("Arial", 12F);
-            this.Btn_excluir_produto.Location = new System.Drawing.Point(76, 514);
-            this.Btn_excluir_produto.Name = "Btn_excluir_produto";
-            this.Btn_excluir_produto.Size = new System.Drawing.Size(180, 46);
-            this.Btn_excluir_produto.TabIndex = 9;
-            this.Btn_excluir_produto.Text = "Excluir Produto";
-            this.Btn_excluir_produto.UseVisualStyleBackColor = false;
             // 
             // Btn_inclui_produto
             // 
@@ -281,7 +273,7 @@ namespace view.viewMesaInformacao
             this.Btn_inclui_produto.Enabled = false;
             this.Btn_inclui_produto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_inclui_produto.Font = new System.Drawing.Font("Arial", 12F);
-            this.Btn_inclui_produto.Location = new System.Drawing.Point(76, 348);
+            this.Btn_inclui_produto.Location = new System.Drawing.Point(29, 500);
             this.Btn_inclui_produto.Name = "Btn_inclui_produto";
             this.Btn_inclui_produto.Size = new System.Drawing.Size(180, 46);
             this.Btn_inclui_produto.TabIndex = 8;
@@ -312,12 +304,13 @@ namespace view.viewMesaInformacao
             this.Btn_finaliza_mesa.Enabled = false;
             this.Btn_finaliza_mesa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_finaliza_mesa.Font = new System.Drawing.Font("Arial", 12F);
-            this.Btn_finaliza_mesa.Location = new System.Drawing.Point(19, 513);
+            this.Btn_finaliza_mesa.Location = new System.Drawing.Point(19, 500);
             this.Btn_finaliza_mesa.Name = "Btn_finaliza_mesa";
             this.Btn_finaliza_mesa.Size = new System.Drawing.Size(125, 46);
             this.Btn_finaliza_mesa.TabIndex = 8;
             this.Btn_finaliza_mesa.Text = "Finalizar Mesa";
             this.Btn_finaliza_mesa.UseVisualStyleBackColor = false;
+            this.Btn_finaliza_mesa.Click += new System.EventHandler(this.Btn_finaliza_mesa_Click);
             // 
             // Btn_inicia_mesa
             // 
@@ -326,7 +319,7 @@ namespace view.viewMesaInformacao
             this.Btn_inicia_mesa.Enabled = false;
             this.Btn_inicia_mesa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_inicia_mesa.Font = new System.Drawing.Font("Arial", 12F);
-            this.Btn_inicia_mesa.Location = new System.Drawing.Point(19, 14);
+            this.Btn_inicia_mesa.Location = new System.Drawing.Point(19, 28);
             this.Btn_inicia_mesa.Name = "Btn_inicia_mesa";
             this.Btn_inicia_mesa.Size = new System.Drawing.Size(125, 46);
             this.Btn_inicia_mesa.TabIndex = 3;
@@ -378,35 +371,46 @@ namespace view.viewMesaInformacao
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // lbl_valor_conta
+            // dt_produto
             // 
-            this.lbl_valor_conta.AutoSize = true;
-            this.lbl_valor_conta.Font = new System.Drawing.Font("Arial", 12F);
-            this.lbl_valor_conta.Location = new System.Drawing.Point(118, 480);
-            this.lbl_valor_conta.Name = "lbl_valor_conta";
-            this.lbl_valor_conta.Size = new System.Drawing.Size(48, 18);
-            this.lbl_valor_conta.TabIndex = 14;
-            this.lbl_valor_conta.Text = "00.00";
+            this.dt_produto.HeaderText = "Produto";
+            this.dt_produto.Name = "dt_produto";
+            this.dt_produto.Width = 200;
             // 
-            // lbl_valor_10porcento
+            // dt_qtd
             // 
-            this.lbl_valor_10porcento.AutoSize = true;
-            this.lbl_valor_10porcento.Font = new System.Drawing.Font("Arial", 12F);
-            this.lbl_valor_10porcento.Location = new System.Drawing.Point(72, 514);
-            this.lbl_valor_10porcento.Name = "lbl_valor_10porcento";
-            this.lbl_valor_10porcento.Size = new System.Drawing.Size(48, 18);
-            this.lbl_valor_10porcento.TabIndex = 15;
-            this.lbl_valor_10porcento.Text = "00.00";
+            this.dt_qtd.HeaderText = "Qtd";
+            this.dt_qtd.Name = "dt_qtd";
+            this.dt_qtd.Width = 50;
             // 
-            // lbl_total_com_10porcento
+            // dt_valor
             // 
-            this.lbl_total_com_10porcento.AutoSize = true;
-            this.lbl_total_com_10porcento.Font = new System.Drawing.Font("Arial", 12F);
-            this.lbl_total_com_10porcento.Location = new System.Drawing.Point(170, 541);
-            this.lbl_total_com_10porcento.Name = "lbl_total_com_10porcento";
-            this.lbl_total_com_10porcento.Size = new System.Drawing.Size(48, 18);
-            this.lbl_total_com_10porcento.TabIndex = 16;
-            this.lbl_total_com_10porcento.Text = "00.00";
+            this.dt_valor.HeaderText = "Valor";
+            this.dt_valor.Name = "dt_valor";
+            this.dt_valor.Width = 50;
+            // 
+            // dt_total
+            // 
+            this.dt_total.HeaderText = "Total";
+            this.dt_total.Name = "dt_total";
+            this.dt_total.Width = 50;
+            // 
+            // dt_excluir_item
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 8.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dt_excluir_item.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_excluir_item.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dt_excluir_item.HeaderText = "Excluir";
+            this.dt_excluir_item.Name = "dt_excluir_item";
+            this.dt_excluir_item.Text = "X";
+            this.dt_excluir_item.UseColumnTextForButtonValue = true;
+            this.dt_excluir_item.Width = 50;
             // 
             // Frm_MesaInformacaoView
             // 
@@ -451,9 +455,7 @@ namespace view.viewMesaInformacao
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel Pnl_center;
         private System.Windows.Forms.Panel Pnl_east;
-        private System.Windows.Forms.Button Btn_excluir_produto;
         private System.Windows.Forms.Button Btn_inclui_produto;
-        private System.Windows.Forms.Button Btn_edita_produto;
         private System.Windows.Forms.Label Lbl_total_conta_10porcento;
         private System.Windows.Forms.Button Btn_finaliza_mesa;
         private System.Windows.Forms.Panel Pnl_conta_detalhada;
@@ -463,12 +465,13 @@ namespace view.viewMesaInformacao
         private System.Windows.Forms.Label Lbl_10porcento;
         private System.Windows.Forms.Label Lbl_nomeGarcom;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lbl_valor_conta;
+        private System.Windows.Forms.Label lbl_total_com_10porcento;
+        private System.Windows.Forms.Label lbl_valor_10porcento;
         private System.Windows.Forms.DataGridViewTextBoxColumn dt_produto;
         private System.Windows.Forms.DataGridViewTextBoxColumn dt_qtd;
         private System.Windows.Forms.DataGridViewTextBoxColumn dt_valor;
         private System.Windows.Forms.DataGridViewTextBoxColumn dt_total;
-        private System.Windows.Forms.Label lbl_valor_conta;
-        private System.Windows.Forms.Label lbl_total_com_10porcento;
-        private System.Windows.Forms.Label lbl_valor_10porcento;
+        private System.Windows.Forms.DataGridViewButtonColumn dt_excluir_item;
     }
 }
