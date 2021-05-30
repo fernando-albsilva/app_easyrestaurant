@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using model;
+using DAO;
 
 namespace view
 {
@@ -24,7 +25,9 @@ namespace view
                 Mesa mesa = new Mesa(i.ToString());
                 grupoMesa.AdicionaMesaNaLista(mesa);
             }
-           
+         /*   Garcom garcomNovo = new Garcom("888", "luana");
+            DAOGarcom garcom = new DAOGarcom();
+            garcom.deletaGarcom("888");*/
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

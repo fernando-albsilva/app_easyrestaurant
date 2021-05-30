@@ -35,6 +35,7 @@ namespace view
             this.Btn_sair = new System.Windows.Forms.Button();
             this.Lbl_imagemLogo = new System.Windows.Forms.Label();
             this.Pnl_south = new System.Windows.Forms.Panel();
+            this.lbl_usuario = new System.Windows.Forms.Label();
             this.Lbl_informacoes = new System.Windows.Forms.Label();
             this.Pnl_east = new System.Windows.Forms.Panel();
             this.Lbl_menu = new System.Windows.Forms.Label();
@@ -55,6 +56,11 @@ namespace view
             this.detalharToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.Pnl_west = new System.Windows.Forms.Panel();
+            this.lbl_total_conta_10porcento = new System.Windows.Forms.Label();
+            this.lbl_total_conta = new System.Windows.Forms.Label();
+            this.lbl_nome_garcom = new System.Windows.Forms.Label();
+            this.lbl_nome_cliente = new System.Windows.Forms.Label();
+            this.lbl_numero_mesa = new System.Windows.Forms.Label();
             this.Lbl_dadosMesa = new System.Windows.Forms.Label();
             this.Lbl_informacaoMesa = new System.Windows.Forms.Label();
             this.Btn_mesa_1 = new System.Windows.Forms.Button();
@@ -73,12 +79,6 @@ namespace view
             this.Btn_mesa4 = new System.Windows.Forms.Button();
             this.Btn_mesa3 = new System.Windows.Forms.Button();
             this.Btn_mesa2 = new System.Windows.Forms.Button();
-            this.lbl_numero_mesa = new System.Windows.Forms.Label();
-            this.lbl_nome_cliente = new System.Windows.Forms.Label();
-            this.lbl_nome_garcom = new System.Windows.Forms.Label();
-            this.lbl_total_conta = new System.Windows.Forms.Label();
-            this.lbl_usuario = new System.Windows.Forms.Label();
-            this.lbl_total_conta_10porcento = new System.Windows.Forms.Label();
             this.Pnl_north.SuspendLayout();
             this.Pnl_south.SuspendLayout();
             this.Pnl_east.SuspendLayout();
@@ -97,7 +97,7 @@ namespace view
             this.Pnl_north.Controls.Add(this.Lbl_imagemLogo);
             this.Pnl_north.Location = new System.Drawing.Point(-2, 0);
             this.Pnl_north.Name = "Pnl_north";
-            this.Pnl_north.Size = new System.Drawing.Size(1009, 105);
+            this.Pnl_north.Size = new System.Drawing.Size(1923, 105);
             this.Pnl_north.TabIndex = 0;
             this.Pnl_north.Paint += new System.Windows.Forms.PaintEventHandler(this.Pnl_north_Paint);
             // 
@@ -110,7 +110,7 @@ namespace view
             this.Btn_receitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_receitas.Font = new System.Drawing.Font("Arial", 15F);
             this.Btn_receitas.ForeColor = System.Drawing.Color.White;
-            this.Btn_receitas.Location = new System.Drawing.Point(569, 30);
+            this.Btn_receitas.Location = new System.Drawing.Point(1483, 30);
             this.Btn_receitas.Name = "Btn_receitas";
             this.Btn_receitas.Size = new System.Drawing.Size(193, 38);
             this.Btn_receitas.TabIndex = 6;
@@ -126,7 +126,7 @@ namespace view
             this.Btn_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_sair.Font = new System.Drawing.Font("Arial", 15F);
             this.Btn_sair.ForeColor = System.Drawing.Color.White;
-            this.Btn_sair.Location = new System.Drawing.Point(803, 30);
+            this.Btn_sair.Location = new System.Drawing.Point(1717, 30);
             this.Btn_sair.Name = "Btn_sair";
             this.Btn_sair.Size = new System.Drawing.Size(193, 38);
             this.Btn_sair.TabIndex = 5;
@@ -152,9 +152,21 @@ namespace view
             this.Pnl_south.Controls.Add(this.Lbl_informacoes);
             this.Pnl_south.Location = new System.Drawing.Point(-2, 799);
             this.Pnl_south.Name = "Pnl_south";
-            this.Pnl_south.Size = new System.Drawing.Size(1009, 200);
+            this.Pnl_south.Size = new System.Drawing.Size(1923, 200);
             this.Pnl_south.TabIndex = 1;
             this.Pnl_south.Paint += new System.Windows.Forms.PaintEventHandler(this.Pnl_south_Paint);
+            // 
+            // lbl_usuario
+            // 
+            this.lbl_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbl_usuario.AutoSize = true;
+            this.lbl_usuario.Font = new System.Drawing.Font("Arial", 15F);
+            this.lbl_usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl_usuario.Location = new System.Drawing.Point(874, 63);
+            this.lbl_usuario.Name = "lbl_usuario";
+            this.lbl_usuario.Size = new System.Drawing.Size(177, 23);
+            this.lbl_usuario.TabIndex = 6;
+            this.lbl_usuario.Text = "Usuario : Fernando";
             // 
             // Lbl_informacoes
             // 
@@ -162,7 +174,7 @@ namespace view
             this.Lbl_informacoes.AutoSize = true;
             this.Lbl_informacoes.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
             this.Lbl_informacoes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(122)))), ((int)(((byte)(20)))));
-            this.Lbl_informacoes.Location = new System.Drawing.Point(415, 20);
+            this.Lbl_informacoes.Location = new System.Drawing.Point(872, 20);
             this.Lbl_informacoes.Name = "Lbl_informacoes";
             this.Lbl_informacoes.Size = new System.Drawing.Size(190, 32);
             this.Lbl_informacoes.TabIndex = 2;
@@ -238,18 +250,21 @@ namespace view
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(218, 36);
             this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // detalharToolStripMenuItem
             // 
             this.detalharToolStripMenuItem.Name = "detalharToolStripMenuItem";
             this.detalharToolStripMenuItem.Size = new System.Drawing.Size(218, 36);
             this.detalharToolStripMenuItem.Text = "Detalhar";
+            this.detalharToolStripMenuItem.Click += new System.EventHandler(this.detalharToolStripMenuItem_Click);
             // 
             // excluirToolStripMenuItem
             // 
             this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
             this.excluirToolStripMenuItem.Size = new System.Drawing.Size(218, 36);
             this.excluirToolStripMenuItem.Text = "Excluir";
+            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
             // 
             // garçomToolStripMenuItem
             // 
@@ -270,24 +285,28 @@ namespace view
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
             this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(218, 36);
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
+            this.cadastrarToolStripMenuItem1.Click += new System.EventHandler(this.cadastrarToolStripMenuItem1_Click);
             // 
             // editarToolStripMenuItem1
             // 
             this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
             this.editarToolStripMenuItem1.Size = new System.Drawing.Size(218, 36);
             this.editarToolStripMenuItem1.Text = "Editar";
+            this.editarToolStripMenuItem1.Click += new System.EventHandler(this.editarToolStripMenuItem1_Click);
             // 
             // detalharToolStripMenuItem1
             // 
             this.detalharToolStripMenuItem1.Name = "detalharToolStripMenuItem1";
             this.detalharToolStripMenuItem1.Size = new System.Drawing.Size(218, 36);
             this.detalharToolStripMenuItem1.Text = "Detalhar";
+            this.detalharToolStripMenuItem1.Click += new System.EventHandler(this.detalharToolStripMenuItem1_Click);
             // 
             // excluirToolStripMenuItem1
             // 
             this.excluirToolStripMenuItem1.Name = "excluirToolStripMenuItem1";
             this.excluirToolStripMenuItem1.Size = new System.Drawing.Size(218, 36);
             this.excluirToolStripMenuItem1.Text = "Excluir";
+            this.excluirToolStripMenuItem1.Click += new System.EventHandler(this.excluirToolStripMenuItem1_Click);
             // 
             // usuarioToolStripMenuItem
             // 
@@ -339,10 +358,50 @@ namespace view
             this.Pnl_west.Controls.Add(this.lbl_numero_mesa);
             this.Pnl_west.Controls.Add(this.Lbl_dadosMesa);
             this.Pnl_west.Controls.Add(this.Lbl_informacaoMesa);
-            this.Pnl_west.Location = new System.Drawing.Point(704, 111);
+            this.Pnl_west.Location = new System.Drawing.Point(1618, 111);
             this.Pnl_west.Name = "Pnl_west";
             this.Pnl_west.Size = new System.Drawing.Size(303, 682);
             this.Pnl_west.TabIndex = 5;
+            // 
+            // lbl_total_conta_10porcento
+            // 
+            this.lbl_total_conta_10porcento.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_total_conta_10porcento.Location = new System.Drawing.Point(20, 317);
+            this.lbl_total_conta_10porcento.Name = "lbl_total_conta_10porcento";
+            this.lbl_total_conta_10porcento.Size = new System.Drawing.Size(270, 18);
+            this.lbl_total_conta_10porcento.TabIndex = 6;
+            // 
+            // lbl_total_conta
+            // 
+            this.lbl_total_conta.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_total_conta.Location = new System.Drawing.Point(20, 273);
+            this.lbl_total_conta.Name = "lbl_total_conta";
+            this.lbl_total_conta.Size = new System.Drawing.Size(269, 18);
+            this.lbl_total_conta.TabIndex = 5;
+            // 
+            // lbl_nome_garcom
+            // 
+            this.lbl_nome_garcom.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_nome_garcom.Location = new System.Drawing.Point(20, 234);
+            this.lbl_nome_garcom.Name = "lbl_nome_garcom";
+            this.lbl_nome_garcom.Size = new System.Drawing.Size(270, 18);
+            this.lbl_nome_garcom.TabIndex = 4;
+            // 
+            // lbl_nome_cliente
+            // 
+            this.lbl_nome_cliente.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_nome_cliente.Location = new System.Drawing.Point(20, 193);
+            this.lbl_nome_cliente.Name = "lbl_nome_cliente";
+            this.lbl_nome_cliente.Size = new System.Drawing.Size(269, 18);
+            this.lbl_nome_cliente.TabIndex = 3;
+            // 
+            // lbl_numero_mesa
+            // 
+            this.lbl_numero_mesa.Font = new System.Drawing.Font("Arial", 12F);
+            this.lbl_numero_mesa.Location = new System.Drawing.Point(20, 153);
+            this.lbl_numero_mesa.Name = "lbl_numero_mesa";
+            this.lbl_numero_mesa.Size = new System.Drawing.Size(270, 23);
+            this.lbl_numero_mesa.TabIndex = 2;
             // 
             // Lbl_dadosMesa
             // 
@@ -373,7 +432,7 @@ namespace view
             this.Btn_mesa_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa_1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa_1.Location = new System.Drawing.Point(22, 17);
+            this.Btn_mesa_1.Location = new System.Drawing.Point(22, 41);
             this.Btn_mesa_1.Name = "Btn_mesa_1";
             this.Btn_mesa_1.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa_1.TabIndex = 6;
@@ -408,7 +467,7 @@ namespace view
             this.Pnl_center.Controls.Add(this.Btn_mesa_1);
             this.Pnl_center.Location = new System.Drawing.Point(307, 111);
             this.Pnl_center.Name = "Pnl_center";
-            this.Pnl_center.Size = new System.Drawing.Size(391, 682);
+            this.Pnl_center.Size = new System.Drawing.Size(1305, 682);
             this.Pnl_center.TabIndex = 6;
             // 
             // Btn_mesa15
@@ -417,7 +476,7 @@ namespace view
             this.Btn_mesa15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa15.Location = new System.Drawing.Point(968, 369);
+            this.Btn_mesa15.Location = new System.Drawing.Point(1127, 532);
             this.Btn_mesa15.Name = "Btn_mesa15";
             this.Btn_mesa15.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa15.TabIndex = 20;
@@ -431,7 +490,7 @@ namespace view
             this.Btn_mesa14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa14.Location = new System.Drawing.Point(744, 369);
+            this.Btn_mesa14.Location = new System.Drawing.Point(864, 532);
             this.Btn_mesa14.Name = "Btn_mesa14";
             this.Btn_mesa14.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa14.TabIndex = 19;
@@ -445,7 +504,7 @@ namespace view
             this.Btn_mesa13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa13.Location = new System.Drawing.Point(507, 369);
+            this.Btn_mesa13.Location = new System.Drawing.Point(591, 532);
             this.Btn_mesa13.Name = "Btn_mesa13";
             this.Btn_mesa13.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa13.TabIndex = 18;
@@ -459,7 +518,7 @@ namespace view
             this.Btn_mesa12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa12.Location = new System.Drawing.Point(262, 369);
+            this.Btn_mesa12.Location = new System.Drawing.Point(310, 532);
             this.Btn_mesa12.Name = "Btn_mesa12";
             this.Btn_mesa12.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa12.TabIndex = 17;
@@ -473,7 +532,7 @@ namespace view
             this.Btn_mesa11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa11.Location = new System.Drawing.Point(22, 369);
+            this.Btn_mesa11.Location = new System.Drawing.Point(22, 532);
             this.Btn_mesa11.Name = "Btn_mesa11";
             this.Btn_mesa11.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa11.TabIndex = 16;
@@ -487,7 +546,7 @@ namespace view
             this.Btn_mesa10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa10.Location = new System.Drawing.Point(968, 193);
+            this.Btn_mesa10.Location = new System.Drawing.Point(1127, 278);
             this.Btn_mesa10.Name = "Btn_mesa10";
             this.Btn_mesa10.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa10.TabIndex = 15;
@@ -501,7 +560,7 @@ namespace view
             this.Btn_mesa9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa9.Location = new System.Drawing.Point(744, 193);
+            this.Btn_mesa9.Location = new System.Drawing.Point(864, 278);
             this.Btn_mesa9.Name = "Btn_mesa9";
             this.Btn_mesa9.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa9.TabIndex = 14;
@@ -515,7 +574,7 @@ namespace view
             this.Btn_mesa8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa8.Location = new System.Drawing.Point(507, 193);
+            this.Btn_mesa8.Location = new System.Drawing.Point(591, 278);
             this.Btn_mesa8.Name = "Btn_mesa8";
             this.Btn_mesa8.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa8.TabIndex = 13;
@@ -529,7 +588,7 @@ namespace view
             this.Btn_mesa7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa7.Location = new System.Drawing.Point(262, 193);
+            this.Btn_mesa7.Location = new System.Drawing.Point(310, 278);
             this.Btn_mesa7.Name = "Btn_mesa7";
             this.Btn_mesa7.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa7.TabIndex = 12;
@@ -543,7 +602,7 @@ namespace view
             this.Btn_mesa6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa6.Location = new System.Drawing.Point(22, 193);
+            this.Btn_mesa6.Location = new System.Drawing.Point(22, 278);
             this.Btn_mesa6.Name = "Btn_mesa6";
             this.Btn_mesa6.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa6.TabIndex = 11;
@@ -557,7 +616,7 @@ namespace view
             this.Btn_mesa5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa5.Location = new System.Drawing.Point(968, 17);
+            this.Btn_mesa5.Location = new System.Drawing.Point(1127, 41);
             this.Btn_mesa5.Name = "Btn_mesa5";
             this.Btn_mesa5.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa5.TabIndex = 10;
@@ -572,7 +631,7 @@ namespace view
             this.Btn_mesa4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa4.Location = new System.Drawing.Point(744, 17);
+            this.Btn_mesa4.Location = new System.Drawing.Point(864, 41);
             this.Btn_mesa4.Name = "Btn_mesa4";
             this.Btn_mesa4.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa4.TabIndex = 9;
@@ -586,7 +645,7 @@ namespace view
             this.Btn_mesa3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa3.Location = new System.Drawing.Point(507, 17);
+            this.Btn_mesa3.Location = new System.Drawing.Point(591, 41);
             this.Btn_mesa3.Name = "Btn_mesa3";
             this.Btn_mesa3.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa3.TabIndex = 8;
@@ -600,7 +659,7 @@ namespace view
             this.Btn_mesa2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_mesa2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_mesa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_mesa2.Location = new System.Drawing.Point(262, 17);
+            this.Btn_mesa2.Location = new System.Drawing.Point(310, 41);
             this.Btn_mesa2.Name = "Btn_mesa2";
             this.Btn_mesa2.Size = new System.Drawing.Size(150, 150);
             this.Btn_mesa2.TabIndex = 7;
@@ -608,63 +667,11 @@ namespace view
             this.Btn_mesa2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_mesa2.UseVisualStyleBackColor = true;
             // 
-            // lbl_numero_mesa
-            // 
-            this.lbl_numero_mesa.Font = new System.Drawing.Font("Arial", 12F);
-            this.lbl_numero_mesa.Location = new System.Drawing.Point(20, 153);
-            this.lbl_numero_mesa.Name = "lbl_numero_mesa";
-            this.lbl_numero_mesa.Size = new System.Drawing.Size(270, 23);
-            this.lbl_numero_mesa.TabIndex = 2;
-            // 
-            // lbl_nome_cliente
-            // 
-            this.lbl_nome_cliente.Font = new System.Drawing.Font("Arial", 12F);
-            this.lbl_nome_cliente.Location = new System.Drawing.Point(20, 193);
-            this.lbl_nome_cliente.Name = "lbl_nome_cliente";
-            this.lbl_nome_cliente.Size = new System.Drawing.Size(269, 18);
-            this.lbl_nome_cliente.TabIndex = 3;
-            // 
-            // lbl_nome_garcom
-            // 
-            this.lbl_nome_garcom.Font = new System.Drawing.Font("Arial", 12F);
-            this.lbl_nome_garcom.Location = new System.Drawing.Point(20, 234);
-            this.lbl_nome_garcom.Name = "lbl_nome_garcom";
-            this.lbl_nome_garcom.Size = new System.Drawing.Size(270, 18);
-            this.lbl_nome_garcom.TabIndex = 4;
-            // 
-            // lbl_total_conta
-            // 
-            this.lbl_total_conta.Font = new System.Drawing.Font("Arial", 12F);
-            this.lbl_total_conta.Location = new System.Drawing.Point(20, 273);
-            this.lbl_total_conta.Name = "lbl_total_conta";
-            this.lbl_total_conta.Size = new System.Drawing.Size(269, 18);
-            this.lbl_total_conta.TabIndex = 5;
-            // 
-            // lbl_usuario
-            // 
-            this.lbl_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbl_usuario.AutoSize = true;
-            this.lbl_usuario.Font = new System.Drawing.Font("Arial", 15F);
-            this.lbl_usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbl_usuario.Location = new System.Drawing.Point(417, 63);
-            this.lbl_usuario.Name = "lbl_usuario";
-            this.lbl_usuario.Size = new System.Drawing.Size(177, 23);
-            this.lbl_usuario.TabIndex = 6;
-            this.lbl_usuario.Text = "Usuario : Fernando";
-            // 
-            // lbl_total_conta_10porcento
-            // 
-            this.lbl_total_conta_10porcento.Font = new System.Drawing.Font("Arial", 12F);
-            this.lbl_total_conta_10porcento.Location = new System.Drawing.Point(20, 317);
-            this.lbl_total_conta_10porcento.Name = "lbl_total_conta_10porcento";
-            this.lbl_total_conta_10porcento.Size = new System.Drawing.Size(270, 18);
-            this.lbl_total_conta_10porcento.TabIndex = 6;
-            // 
             // Frm_HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 999);
+            this.ClientSize = new System.Drawing.Size(1920, 999);
             this.Controls.Add(this.Pnl_center);
             this.Controls.Add(this.Pnl_west);
             this.Controls.Add(this.Pnl_east);

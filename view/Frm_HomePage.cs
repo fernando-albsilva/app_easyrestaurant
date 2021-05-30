@@ -11,6 +11,7 @@ using model;
 using view.viewMesaInformacao;
 using view.viewPopUp;
 using view.viewProduto;
+using view.viewGarcom;
 
 namespace view
 {
@@ -144,6 +145,48 @@ namespace view
         {
             Frm_produtoCadastro frm_produtoCadastro = new Frm_produtoCadastro();
             frm_produtoCadastro.ShowDialog();
+        }
+
+        private void detalharToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_produtoDetalha frm_produtoDetalha = new Frm_produtoDetalha();
+            frm_produtoDetalha.ShowDialog();
+        }
+
+        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_produtoExclui frm_produtoExclui = new Frm_produtoExclui();
+            frm_produtoExclui.ShowDialog();
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_produtoEdita frm_produtoEdita = new Frm_produtoEdita();
+            frm_produtoEdita.ShowDialog();
+        }
+
+        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_garcomCadastra frm_garcomCadastra = new Frm_garcomCadastra();
+            frm_garcomCadastra.ShowDialog();
+        }
+
+        private void editarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_garcomEdita frm_garcomEdita = new Frm_garcomEdita();
+            frm_garcomEdita.ShowDialog();
+        }
+
+        private void detalharToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_garcomDetalha frm_garcomDetalha = new Frm_garcomDetalha();
+            frm_garcomDetalha.ShowDialog();
+        }
+
+        private void excluirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_garcomExclui frm_garcomExclui = new Frm_garcomExclui();
+            frm_garcomExclui.ShowDialog();
         }
     }
 }

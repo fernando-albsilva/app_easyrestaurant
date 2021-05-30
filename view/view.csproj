@@ -79,6 +79,30 @@
     <Compile Include="Frm_LogIn.Designer.cs">
       <DependentUpon>Frm_LogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewGarcom\Frm_garcomCadastra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewGarcom\Frm_garcomCadastra.Designer.cs">
+      <DependentUpon>Frm_garcomCadastra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewGarcom\Frm_garcomDetalha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewGarcom\Frm_garcomDetalha.Designer.cs">
+      <DependentUpon>Frm_garcomDetalha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewGarcom\Frm_garcomEdita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewGarcom\Frm_garcomEdita.Designer.cs">
+      <DependentUpon>Frm_garcomEdita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewGarcom\Frm_garcomExclui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewGarcom\Frm_garcomExclui.Designer.cs">
+      <DependentUpon>Frm_garcomExclui.cs</DependentUpon>
+    </Compile>
     <Compile Include="viewMesaInformacao\Frm_MesaInformacaoView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +127,24 @@
     <Compile Include="viewProduto\Frm_produtoCadastro.Designer.cs">
       <DependentUpon>Frm_produtoCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewProduto\Frm_produtoDetalha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewProduto\Frm_produtoDetalha.Designer.cs">
+      <DependentUpon>Frm_produtoDetalha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewProduto\Frm_produtoEdita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewProduto\Frm_produtoEdita.Designer.cs">
+      <DependentUpon>Frm_produtoEdita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewProduto\Frm_produtoExclui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewProduto\Frm_produtoExclui.Designer.cs">
+      <DependentUpon>Frm_produtoExclui.cs</DependentUpon>
+    </Compile>
     <Compile Include="viewProduto\Frm_produtoInclusao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +159,18 @@
     <EmbeddedResource Include="Frm_LogIn.resx">
       <DependentUpon>Frm_LogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="viewGarcom\Frm_garcomCadastra.resx">
+      <DependentUpon>Frm_garcomCadastra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewGarcom\Frm_garcomDetalha.resx">
+      <DependentUpon>Frm_garcomDetalha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewGarcom\Frm_garcomEdita.resx">
+      <DependentUpon>Frm_garcomEdita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewGarcom\Frm_garcomExclui.resx">
+      <DependentUpon>Frm_garcomExclui.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewMesaInformacao\Frm_MesaInformacaoView.resx">
       <DependentUpon>Frm_MesaInformacaoView.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +182,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewProduto\Frm_produtoCadastro.resx">
       <DependentUpon>Frm_produtoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewProduto\Frm_produtoDetalha.resx">
+      <DependentUpon>Frm_produtoDetalha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewProduto\Frm_produtoEdita.resx">
+      <DependentUpon>Frm_produtoEdita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewProduto\Frm_produtoExclui.resx">
+      <DependentUpon>Frm_produtoExclui.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewProduto\Frm_produtoInclusao.resx">
       <DependentUpon>Frm_produtoInclusao.cs</DependentUpon>

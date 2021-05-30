@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ControllerMesa.cs" />
     <Compile Include="ControllerUser.cs" />
+    <Compile Include="GarcomController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

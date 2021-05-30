@@ -29,10 +29,17 @@ C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\bin\Debug\model.pdb
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csprojAssemblyReference.cache
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Frm_HomePage.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Frm_LogIn.resources
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewGarcom.Frm_garcomCadastra.resources
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewGarcom.Frm_garcomDetalha.resources
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewGarcom.Frm_garcomEdita.resources
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewGarcom.Frm_garcomExclui.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewMesaInformacao.Frm_MesaInformacaoView.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewPopUp.Frm_PopUpAvisoLogIn.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewPopUp.Frm_PopUpSair.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewProduto.Frm_produtoCadastro.resources
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewProduto.Frm_produtoDetalha.resources
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewProduto.Frm_produtoEdita.resources
+C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewProduto.Frm_produtoExclui.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.viewProduto.Frm_produtoInclusao.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.Properties.Resources.resources
 C:\Users\PICHAU\Source\Repos\app_easyrestaurant\view\obj\Debug\view.csproj.GenerateResource.cache
